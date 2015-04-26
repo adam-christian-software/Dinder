@@ -20,8 +20,8 @@
 //this makes it so only two cards are loaded at a time to
 //avoid performance and memory costs
 static const int MAX_BUFFER_SIZE = 2; //%%% max number of cards loaded at any given time, must be greater than 1
-static const float CARD_HEIGHT = 386; //%%% height of the draggable card
-static const float CARD_WIDTH = 290; //%%% width of the draggable card
+static const float CARD_HEIGHT = 530; //%%% height of the draggable card
+static const float CARD_WIDTH = 304; //%%% width of the draggable card
 
 @synthesize exampleCardLabels; //%%% all the labels I'm using as example data at the moment
 @synthesize allCards;//%%% all the cards
@@ -31,12 +31,12 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
     self = [super initWithFrame:frame];
     if (self) {
         [super layoutSubviews];
-        [self setupView];
         exampleCardLabels = [[NSArray alloc]initWithObjects:@"first",@"second",@"third",@"fourth",@"last", nil]; //%%% placeholder for card-specific information
         loadedCards = [[NSMutableArray alloc] init];
         allCards = [[NSMutableArray alloc] init];
         cardsLoadedIndex = 0;
         [self loadCards];
+        [self setupView];
     }
     return self;
 }
@@ -46,12 +46,12 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
 {
 #warning customize all of this.  These are just place holders to make it look pretty
     self.backgroundColor = [UIColor colorWithRed:.92 green:.93 blue:.95 alpha:1]; //the gray background colors
-    menuButton = [[UIButton alloc]initWithFrame:CGRectMake(17, 34, 36, 36)];
+    menuButton = [[UIButton alloc]initWithFrame:CGRectMake(12, 39, 36, 36)];
     [menuButton setImage:[UIImage imageNamed:@"Menu"] forState:UIControlStateNormal];
-    messageButton = [[UIButton alloc]initWithFrame:CGRectMake(284, 34, 40, 40)];
+    messageButton = [[UIButton alloc]initWithFrame:CGRectMake(272, 39, 40, 40)];
     [messageButton setImage:[UIImage imageNamed:@"Match"] forState:UIControlStateNormal];
     xButton = [[UIButton alloc]initWithFrame:CGRectMake(60, 475, 80, 80)];
-    [xButton setImage:[UIImage imageNamed:@"ForkKnife-1"] forState:UIControlStateNormal];
+    [xButton setImage:[UIImage imageNamed:@"ForkKnife"] forState:UIControlStateNormal];
     [xButton addTarget:self action:@selector(swipeLeft) forControlEvents:UIControlEventTouchUpInside];
     checkButton = [[UIButton alloc]initWithFrame:CGRectMake(200, 485, 59, 59)];
     [checkButton setImage:[UIImage imageNamed:@"Ladle"] forState:UIControlStateNormal];
@@ -68,7 +68,7 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
 // to get rid of it (eg: if you are building cards from data from the internet)
 -(DraggableView *)createDraggableViewWithDataAtIndex:(NSInteger)index
 {
-    DraggableView *draggableView = [[DraggableView alloc]initWithFrame:CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT)];
+    DraggableView *draggableView = [[DraggableView alloc]initWithFrame:CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2 + 10, CARD_WIDTH, CARD_HEIGHT)];
     draggableView.information.text = [exampleCardLabels objectAtIndex:index]; //%%% placeholder for card-specific information
     draggableView.delegate = self;
     return draggableView;
