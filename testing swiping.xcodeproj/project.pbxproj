@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B280F271AECB76B0088E222 /* HomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B280F251AECB76B0088E222 /* HomeScreenViewController.m */; };
+		7B8DB0511AEC9F4400E035CF /* HomeScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DB0501AEC9F4400E035CF /* HomeScreenView.m */; };
 		99B7AE99192D50D500C1B49C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B7AE98192D50D500C1B49C /* Foundation.framework */; };
 		99B7AE9B192D50D500C1B49C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B7AE9A192D50D500C1B49C /* CoreGraphics.framework */; };
 		99B7AE9D192D50D500C1B49C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B7AE9C192D50D500C1B49C /* UIKit.framework */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B280F251AECB76B0088E222 /* HomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScreenViewController.m; sourceTree = "<group>"; };
+		7B280F261AECB76B0088E222 /* HomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScreenViewController.h; sourceTree = "<group>"; };
+		7B8DB04F1AEC9F3600E035CF /* HomeScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScreenView.h; sourceTree = "<group>"; };
+		7B8DB0501AEC9F4400E035CF /* HomeScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScreenView.m; sourceTree = "<group>"; };
 		99B7AE95192D50D500C1B49C /* testing swiping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "testing swiping.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B7AE98192D50D500C1B49C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		99B7AE9A192D50D500C1B49C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +127,8 @@
 		99B7AE9E192D50D500C1B49C /* testing swiping */ = {
 			isa = PBXGroup;
 			children = (
+				7B280F251AECB76B0088E222 /* HomeScreenViewController.m */,
+				7B280F261AECB76B0088E222 /* HomeScreenViewController.h */,
 				99B7AEA7192D50D500C1B49C /* AppDelegate.h */,
 				99B7AEA8192D50D500C1B49C /* AppDelegate.m */,
 				99B7AEAA192D50D500C1B49C /* Main.storyboard */,
@@ -128,6 +136,8 @@
 				99B7AEAE192D50D500C1B49C /* ViewController.m */,
 				99FDDE7719A992F200371454 /* DraggableViewBackground.h */,
 				99FDDE7819A992F200371454 /* DraggableViewBackground.m */,
+				7B8DB04F1AEC9F3600E035CF /* HomeScreenView.h */,
+				7B8DB0501AEC9F4400E035CF /* HomeScreenView.m */,
 				99B7AECD192D513800C1B49C /* DraggableView.h */,
 				99B7AECE192D513800C1B49C /* DraggableView.m */,
 				99B7AED0192E914500C1B49C /* OverlayView.h */,
@@ -265,9 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				99FDDE7919A992F200371454 /* DraggableViewBackground.m in Sources */,
+				7B8DB0511AEC9F4400E035CF /* HomeScreenView.m in Sources */,
 				99B7AEAF192D50D500C1B49C /* ViewController.m in Sources */,
 				99B7AED2192E914500C1B49C /* OverlayView.m in Sources */,
 				99B7AEA9192D50D500C1B49C /* AppDelegate.m in Sources */,
+				7B280F271AECB76B0088E222 /* HomeScreenViewController.m in Sources */,
 				99B7AECF192D513800C1B49C /* DraggableView.m in Sources */,
 				99B7AEA5192D50D500C1B49C /* main.m in Sources */,
 			);
