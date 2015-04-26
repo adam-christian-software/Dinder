@@ -7,10 +7,13 @@
 //
 
 #import "DraggableViewBackground.h"
+#import "SettingsView.h"
 
 @implementation DraggableViewBackground{
     NSInteger cardsLoadedIndex; //%%% the index of the card you have loaded into the loadedCards array last
     NSMutableArray *loadedCards; //%%% the array of card loaded (change max_buffer_size to increase or decrease the number of cards this holds)
+    
+    SettingsView *settingsView;
     
     UIButton* menuButton;
     UIButton* messageButton;
@@ -37,6 +40,7 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
         cardsLoadedIndex = 0;
         [self loadCards];
         [self setupView];
+        [self setupSettingsView];
     }
     return self;
 }
@@ -48,6 +52,7 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
     self.backgroundColor = [UIColor colorWithRed:.92 green:.93 blue:.95 alpha:1]; //the gray background colors
     menuButton = [[UIButton alloc]initWithFrame:CGRectMake(12, 39, 36, 36)];
     [menuButton setImage:[UIImage imageNamed:@"Menu"] forState:UIControlStateNormal];
+    [menuButton addTarget:self action:@selector(menuLaunch) forControlEvents:UIControlEventTouchUpInside];
     messageButton = [[UIButton alloc]initWithFrame:CGRectMake(272, 39, 40, 40)];
     [messageButton setImage:[UIImage imageNamed:@"Match"] forState:UIControlStateNormal];
     xButton = [[UIButton alloc]initWithFrame:CGRectMake(60, 475, 80, 80)];
@@ -61,6 +66,14 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
     [self addSubview:xButton];
     [self addSubview:checkButton];
 }
+
+-(void)setupSettingsView
+{
+    settingsView = [[SettingsView alloc]initWithFrame:CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2 + 10, CARD_WIDTH, CARD_HEIGHT)];
+//    settingsView.information.text = [exampleCardLabels objectAtIndex:index]; //%%% placeholder for card-specific information
+    //settingsView.delegate = self;
+}
+
 
 #warning include own card customization here!
 //%%% creates a card and returns it.  This should be customized to fit your needs.
@@ -160,6 +173,11 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
         dragView.overlayView.alpha = 1;
     }];
     [dragView leftClickAction];
+}
+
+-(void)menuLaunch
+{
+    //SettingsView *settingsView =;
 }
 
 /*
