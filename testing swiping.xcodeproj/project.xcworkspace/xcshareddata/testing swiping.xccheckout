@@ -7,22 +7,18 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>FA486F28-20CE-4F09-8DC8-E2237D17CEA7</string>
 	<key>IDESourceControlProjectName</key>
-	<string>testing swiping</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>4C64D032F98DB64723B243FFF4EB94FE3D03DF49</key>
 		<string>https://github.com/JBader89/Dinder.git</string>
-		<key>5FA3FC38AA2426C6B4D765831317071D38AFC7E0</key>
-		<string>github.com:cwRichardKim/TinderSimpleSwipeCards.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>testing swiping.xcodeproj</string>
+	<string>testing swiping.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4C64D032F98DB64723B243FFF4EB94FE3D03DF49</key>
 		<string>../..</string>
-		<key>5FA3FC38AA2426C6B4D765831317071D38AFC7E0</key>
-		<string>../../../TinderSimpleSwipeCards</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/JBader89/Dinder.git</string>
@@ -39,14 +35,6 @@
 			<string>4C64D032F98DB64723B243FFF4EB94FE3D03DF49</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Dinder</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5FA3FC38AA2426C6B4D765831317071D38AFC7E0</string>
-			<key>IDESourceControlWCCName</key>
-			<string>TinderSimpleSwipeCards</string>
 		</dict>
 	</array>
 </dict>
