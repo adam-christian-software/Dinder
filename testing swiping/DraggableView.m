@@ -22,12 +22,16 @@
     CGFloat yFromCenter;
 }
 
+static const float CARD_HEIGHT = 530; //%%% height of the draggable card
+static const float CARD_WIDTH = 304; //%%% width of the draggable card
+
 //delegate is instance of ViewController
 @synthesize delegate;
 
 @synthesize panGestureRecognizer;
 @synthesize information;
 @synthesize overlayView;
+@synthesize imageView;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -40,6 +44,8 @@
         information.text = @"no info given";
         [information setTextAlignment:NSTextAlignmentCenter];
         information.textColor = [UIColor blackColor];
+        imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"FullSizeRender 2.jpg"]];
+        imageView.frame = CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT);
         
         self.backgroundColor = [UIColor whiteColor];
 #warning placeholder stuff, replace with card-specific information }
@@ -50,6 +56,7 @@
         
         [self addGestureRecognizer:panGestureRecognizer];
         [self addSubview:information];
+        [self addSubview:imageView];
         
         overlayView = [[OverlayView alloc]initWithFrame:CGRectMake(self.frame.size.width/2-100, 0, 100, 100)];
         overlayView.alpha = 0;
