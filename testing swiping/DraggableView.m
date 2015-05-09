@@ -22,7 +22,7 @@
     CGFloat yFromCenter;
 }
 
-static const float CARD_HEIGHT = 530; //%%% height of the draggable card
+static const float CARD_HEIGHT = 400; //%%% height of the draggable card
 static const float CARD_WIDTH = 304; //%%% width of the draggable card
 
 //delegate is instance of ViewController
@@ -56,7 +56,7 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
             }
         }
         
-        imageView.frame = CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT);
+        imageView.frame = CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2.2, CARD_WIDTH, CARD_HEIGHT);
         
         self.backgroundColor = [UIColor whiteColor];
 #warning placeholder stuff, replace with card-specific information }

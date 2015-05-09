@@ -70,7 +70,7 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
 -(void)setupSettingsView
 {
     settingsView = [[SettingsView alloc]initWithFrame:CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2 + 10, CARD_WIDTH, CARD_HEIGHT)];
-//    settingsView.information.text = [exampleCardLabels objectAtIndex:index]; //%%% placeholder for card-specific information
+    //settingsView.information.text = [exampleCardLabels objectAtIndex:index]; //%%% placeholder for card-specific information
     //settingsView.delegate = self;
 }
 
