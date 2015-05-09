@@ -48,8 +48,8 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
         
         NSString *photo = [NSString stringWithFormat:@"IMG_11094.jpg"];
         while (![self fileExistsInProject:photo]){
-            int rndValue = 100 + arc4random() % (400 - 100);
-            NSString *photo = [NSString stringWithFormat:@"IMG_1%d.jpg", rndValue];
+            int rndValue = 1000 + arc4random() % (3109 - 1000);
+            NSString *photo = [NSString stringWithFormat:@"IMG_%d.jpg", rndValue];
             if ([self fileExistsInProject:photo]){
                 self.imageView.image = [UIImage imageNamed:photo];
                 break;
