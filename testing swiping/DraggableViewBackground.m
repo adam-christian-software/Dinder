@@ -34,7 +34,7 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
     self = [super initWithFrame:frame];
     if (self) {
         [super layoutSubviews];
-        exampleCardLabels = [[NSArray alloc]initWithObjects:@"first",@"second",@"third",@"fourth",@"last", nil]; //%%% placeholder for card-specific information
+        exampleCardLabels = [[NSArray alloc]initWithObjects:@"first",@"second",@"third",@"fourth",@"last",@"merp",@"second",@"third",@"fourth",@"last",@"merp",@"second",@"third",@"fourth",@"last",@"merp",@"second",@"third",@"fourth",@"last",@"merp",@"second",@"third",@"fourth",@"last",@"merp",@"second",@"third",@"fourth",@"last",@"merp",@"second",@"third",@"fourth",@"last",@"merp",@"second",@"third",@"fourth",@"last",@"merp", nil]; //%%% placeholder for card-specific information
         loadedCards = [[NSMutableArray alloc] init];
         allCards = [[NSMutableArray alloc] init];
         cardsLoadedIndex = 0;
