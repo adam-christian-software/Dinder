@@ -44,7 +44,18 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
         information.text = @"no info given";
         [information setTextAlignment:NSTextAlignmentCenter];
         information.textColor = [UIColor blackColor];
-        imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"FullSizeRender 2.jpg"]];
+        imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"IMG_1131.jpg"]];
+        
+        NSString *photo = [NSString stringWithFormat:@"IMG_11094.jpg"];
+        while (![self fileExistsInProject:photo]){
+            int rndValue = 100 + arc4random() % (400 - 100);
+            NSString *photo = [NSString stringWithFormat:@"IMG_1%d.jpg", rndValue];
+            if ([self fileExistsInProject:photo]){
+                self.imageView.image = [UIImage imageNamed:photo];
+                break;
+            }
+        }
+        
         imageView.frame = CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT);
         
         self.backgroundColor = [UIColor whiteColor];
@@ -63,6 +74,13 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
         [self addSubview:overlayView];
     }
     return self;
+}
+
+-(BOOL) fileExistsInProject:(NSString *)fileName
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *fileInResourcesFolder = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:fileName];
+    return [fileManager fileExistsAtPath:fileInResourcesFolder];
 }
 
 -(void)setupView
