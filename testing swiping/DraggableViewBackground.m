@@ -177,7 +177,10 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
 
 -(void)menuLaunch
 {
-    //SettingsView *settingsView =;
+    SettingsView *settingsView = [loadedCards firstObject];
+    
+    NSLog(@"Settings Clicked");
+    
 }
 
 /*
