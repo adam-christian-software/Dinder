@@ -18,9 +18,9 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
     DraggableViewBackground *draggableBackground = [[DraggableViewBackground alloc]initWithFrame:self.view.frame];
-    [self.view addSubview:draggableBackground];
+    [self.view insertSubview:draggableBackground atIndex:0];
+    [super viewDidLoad];
 }
 
 @end

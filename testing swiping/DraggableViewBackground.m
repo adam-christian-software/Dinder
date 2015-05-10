@@ -15,8 +15,8 @@
     
     SettingsView *settingsView;
     
-    UIButton* menuButton;
-    UIButton* matchesButton;
+    //UIButton* menuButton;
+    //UIButton* matchesButton;
     UIButton* checkButton;
     UIButton* xButton;
 
@@ -53,26 +53,26 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
 {
 #warning customize all of this.  These are just place holders to make it look pretty
     self.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:1]; //the gray background colors
-    menuButton = [[UIButton alloc]initWithFrame:CGRectMake(12, 39, 36, 36)];
-    [menuButton setImage:[UIImage imageNamed:@"Menu"] forState:UIControlStateNormal];
-    [menuButton addTarget:self action:@selector(menuLaunch) forControlEvents:UIControlEventTouchUpInside];
-    
-    matchesButton = [[UIButton alloc]initWithFrame:CGRectMake(272, 37, 40, 40)];
-    [matchesButton setImage:[UIImage imageNamed:@"Match"] forState:UIControlStateNormal];
+//    menuButton = [[UIButton alloc]initWithFrame:CGRectMake(12, 39, 36, 36)];
+//    [menuButton setImage:[UIImage imageNamed:@"Menu"] forState:UIControlStateNormal];
+//    [menuButton addTarget:self action:@selector(menuLaunch) forControlEvents:UIControlEventTouchUpInside];
+//    
+//    matchesButton = [[UIButton alloc]initWithFrame:CGRectMake(272, 37, 40, 40)];
+//    [matchesButton setImage:[UIImage imageNamed:@"Match"] forState:UIControlStateNormal];
     //[viewController.view addSubview:messageButton];
     //[messageButton addTarget:self action:@selector(didPressButton:) forControlEvents:UIControlEventTouchUpInside];
     
-    xButton = [[UIButton alloc]initWithFrame:CGRectMake(60, 485, 80, 80)];
+    xButton = [[UIButton alloc]initWithFrame:CGRectMake(50, 475, 100, 100)];
     [xButton setImage:[UIImage imageNamed:@"ForkKnife"] forState:UIControlStateNormal];
     [xButton addTarget:self action:@selector(swipeLeft) forControlEvents:UIControlEventTouchUpInside];
-    checkButton = [[UIButton alloc]initWithFrame:CGRectMake(200, 495, 59, 59)];
+    checkButton = [[UIButton alloc]initWithFrame:CGRectMake(170, 475, 100, 100)];
     [checkButton setImage:[UIImage imageNamed:@"Ladle"] forState:UIControlStateNormal];
     [checkButton addTarget:self action:@selector(swipeRight) forControlEvents:UIControlEventTouchUpInside];
     tinderLogo = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"DinderLogoText"]];
     tinderLogo.frame = CGRectMake(88, 18, 150, 75);
 
-    [self addSubview:menuButton];
-    [self addSubview:matchesButton];
+    //[self addSubview:menuButton];
+    //[self addSubview:matchesButton];
     [self addSubview:xButton];
     [self addSubview:checkButton];
     [self addSubview:tinderLogo];
