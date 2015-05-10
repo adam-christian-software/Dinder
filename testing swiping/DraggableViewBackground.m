@@ -19,6 +19,7 @@
     UIButton* messageButton;
     UIButton* checkButton;
     UIButton* xButton;
+
 }
 //this makes it so only two cards are loaded at a time to
 //avoid performance and memory costs
@@ -29,6 +30,7 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
 
 //@synthesize exampleCardLabels; //%%% all the labels I'm using as example data at the moment
 @synthesize allCards;//%%% all the cards
+@synthesize tinderLogo;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -39,9 +41,9 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
         loadedCards = [[NSMutableArray alloc] init];
         allCards = [[NSMutableArray alloc] init];
         cardsLoadedIndex = 0;
-        [self loadCards];
         [self setupView];
         [self setupSettingsView];
+        [self loadCards];
     }
     return self;
 }
@@ -50,11 +52,11 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
 -(void)setupView
 {
 #warning customize all of this.  These are just place holders to make it look pretty
-    self.backgroundColor = [UIColor colorWithRed:.92 green:.93 blue:.95 alpha:1]; //the gray background colors
+    self.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:1]; //the gray background colors
     menuButton = [[UIButton alloc]initWithFrame:CGRectMake(12, 39, 36, 36)];
     [menuButton setImage:[UIImage imageNamed:@"Menu"] forState:UIControlStateNormal];
     [menuButton addTarget:self action:@selector(menuLaunch) forControlEvents:UIControlEventTouchUpInside];
-    messageButton = [[UIButton alloc]initWithFrame:CGRectMake(272, 39, 40, 40)];
+    messageButton = [[UIButton alloc]initWithFrame:CGRectMake(272, 37, 40, 40)];
     [messageButton setImage:[UIImage imageNamed:@"Match"] forState:UIControlStateNormal];
     xButton = [[UIButton alloc]initWithFrame:CGRectMake(60, 485, 80, 80)];
     [xButton setImage:[UIImage imageNamed:@"ForkKnife"] forState:UIControlStateNormal];
@@ -62,10 +64,14 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
     checkButton = [[UIButton alloc]initWithFrame:CGRectMake(200, 495, 59, 59)];
     [checkButton setImage:[UIImage imageNamed:@"Ladle"] forState:UIControlStateNormal];
     [checkButton addTarget:self action:@selector(swipeRight) forControlEvents:UIControlEventTouchUpInside];
+    tinderLogo = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"DinderLogoText"]];
+    tinderLogo.frame = CGRectMake(88, 18, 150, 75);
+
     [self addSubview:menuButton];
     [self addSubview:messageButton];
     [self addSubview:xButton];
     [self addSubview:checkButton];
+    [self addSubview:tinderLogo];
 }
 
 -(void)setupSettingsView
