@@ -46,7 +46,7 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
         information.textColor = [UIColor blackColor];
         imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"IMG_1131.jpg"]];
         
-        NSString *photo = [NSString stringWithFormat:@"IMG_11094.jpg"];
+        NSString *photo = [NSString stringWithFormat:@"temp"];
         while (![self fileExistsInProject:photo]){
             int rndValue = 1000 + arc4random() % (3109 - 1000);
             NSString *photo = [NSString stringWithFormat:@"IMG_%d.jpg", rndValue];

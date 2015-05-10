@@ -23,10 +23,11 @@
 //this makes it so only two cards are loaded at a time to
 //avoid performance and memory costs
 static const int MAX_BUFFER_SIZE = 2; //%%% max number of cards loaded at any given time, must be greater than 1
+int numCardsLeft = 1000;
 static const float CARD_HEIGHT = 400; //%%% height of the draggable card
 static const float CARD_WIDTH = 304; //%%% width of the draggable card
 
-@synthesize exampleCardLabels; //%%% all the labels I'm using as example data at the moment
+//@synthesize exampleCardLabels; //%%% all the labels I'm using as example data at the moment
 @synthesize allCards;//%%% all the cards
 
 - (id)initWithFrame:(CGRect)frame
@@ -34,7 +35,7 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
     self = [super initWithFrame:frame];
     if (self) {
         [super layoutSubviews];
-        exampleCardLabels = [[NSArray alloc]initWithObjects:@"first",@"second",@"third",@"fourth",@"last",@"merp",@"second",@"third",@"fourth",@"last",@"merp",@"second",@"third",@"fourth",@"last",@"merp",@"second",@"third",@"fourth",@"last",@"merp",@"second",@"third",@"fourth",@"last",@"merp",@"second",@"third",@"fourth",@"last",@"merp",@"second",@"third",@"fourth",@"last",@"merp",@"second",@"third",@"fourth",@"last",@"merp", nil]; //%%% placeholder for card-specific information
+        //exampleCardLabels = [[NSArray alloc]initWithObjects:@"first",@"second",@"third",@"fourth",@"last" nil]; //%%% placeholder for card-specific information
         loadedCards = [[NSMutableArray alloc] init];
         allCards = [[NSMutableArray alloc] init];
         cardsLoadedIndex = 0;
@@ -82,7 +83,7 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
 -(DraggableView *)createDraggableViewWithDataAtIndex:(NSInteger)index
 {
     DraggableView *draggableView = [[DraggableView alloc]initWithFrame:CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT - 20)];
-    draggableView.information.text = [exampleCardLabels objectAtIndex:index]; //%%% placeholder for card-specific information
+    //draggableView.information.text = [exampleCardLabels objectAtIndex:index]; //%%% placeholder for card-specific information
     draggableView.delegate = self;
     return draggableView;
 }
@@ -90,12 +91,12 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
 //%%% loads all the cards and puts the first x in the "loaded cards" array
 -(void)loadCards
 {
-    if([exampleCardLabels count] > 0) {
-        NSInteger numLoadedCardsCap =(([exampleCardLabels count] > MAX_BUFFER_SIZE)?MAX_BUFFER_SIZE:[exampleCardLabels count]);
+    if(numCardsLeft > 0) {
+        NSInteger numLoadedCardsCap =((numCardsLeft > MAX_BUFFER_SIZE)?MAX_BUFFER_SIZE:numCardsLeft);
         //%%% if the buffer size is greater than the data size, there will be an array error, so this makes sure that doesn't happen
         
         //%%% loops through the exampleCardsLabels array to create a card for each label.  This should be customized by removing "exampleCardLabels" with your own array of data
-        for (int i = 0; i<[exampleCardLabels count]; i++) {
+        for (int i = 0; i<numCardsLeft; i++) {
             DraggableView* newCard = [self createDraggableViewWithDataAtIndex:i];
             [allCards addObject:newCard];
             
