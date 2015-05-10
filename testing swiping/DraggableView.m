@@ -56,7 +56,7 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
             }
         }
         
-        imageView.frame = CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2.2, CARD_WIDTH, CARD_HEIGHT);
+        imageView.frame = CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2 + 10, CARD_WIDTH, CARD_HEIGHT);
         
         self.backgroundColor = [UIColor whiteColor];
 #warning placeholder stuff, replace with card-specific information }
@@ -69,7 +69,7 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
         [self addSubview:information];
         [self addSubview:imageView];
         
-        overlayView = [[OverlayView alloc]initWithFrame:CGRectMake(self.frame.size.width/2-100, 0, 100, 100)];
+        overlayView = [[OverlayView alloc]initWithFrame:CGRectMake(self.frame.size.width/2-100, 0, 0, 0)];
         overlayView.alpha = 0;
         [self addSubview:overlayView];
     }
