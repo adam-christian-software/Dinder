@@ -73,7 +73,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wKI-NN-F6r" kind="modal" id="XPU-Ra-2AM"/>
+                                    <segue destination="fmf-bm-3dk" kind="modal" id="m4w-Dx-nc5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,24 +85,31 @@
             </objects>
             <point key="canvasLocation" x="855" y="271"/>
         </scene>
-        <!--Item 2-->
-        <scene sceneID="T7z-Ra-R4X">
+        <!--Table View Controller-->
+        <scene sceneID="h9D-2b-d1c">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aMo-dJ-IAK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="wKI-NN-F6r" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Er7-bE-vG2"/>
-                        <viewControllerLayoutGuide type="bottom" id="DFN-MG-ryK"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="qhD-jC-f58">
+                <tableViewController id="fmf-bm-3dk" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="TC6-A6-9iP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="ywI-gs-5Wn"/>
-                </viewController>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eJp-Si-vKK">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eJp-Si-vKK" id="Axf-I3-jSP">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fmf-bm-3dk" id="76r-6I-uUr"/>
+                            <outlet property="delegate" destination="fmf-bm-3dk" id="mIA-Tg-sLy"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hoq-ZS-Ihc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1269" y="731"/>
+            <point key="canvasLocation" x="1342" y="647"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="0I8-0e-QVc">
@@ -116,22 +123,65 @@
                     <view key="view" contentMode="scaleToFill" id="QIk-7p-ZZc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFK-w6-O6o">
+                                <rect key="frame" x="23" y="338" width="61" height="68"/>
+                                <state key="normal" image="Coffee PNG">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnb-EE-2Ib">
+                                <rect key="frame" x="92" y="351" width="54" height="55"/>
+                                <state key="normal" title="Button" image="BeerGlassIcon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dN-gc-ONf">
+                                <rect key="frame" x="159" y="352" width="55" height="54"/>
+                                <state key="normal" title="Button" image="Breakfast">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxe-03-IMg">
+                                <rect key="frame" x="217" y="337" width="87" height="83"/>
+                                <state key="normal" title="Button" image="Burger">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpf-Z6-uYD">
+                                <rect key="frame" x="249" y="0.0" width="84" height="87"/>
+                                <state key="normal" image="noButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="c2J-2t-hbB" kind="modal" id="5XS-d8-R50"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Z3R-Xz-1Yu"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1262" y="94"/>
+            <point key="canvasLocation" x="1342" y="-110"/>
         </scene>
     </scenes>
     <resources>
+        <image name="BeerGlassIcon" width="512" height="512"/>
+        <image name="Breakfast" width="512" height="512"/>
+        <image name="Burger" width="512" height="512"/>
+        <image name="Coffee PNG" width="512" height="512"/>
         <image name="DinderLogoText" width="300" height="150"/>
         <image name="Match" width="512" height="512"/>
         <image name="Menu" width="256" height="256"/>
+        <image name="noButton" width="70" height="70"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="5XS-d8-R50"/>
+    </inferredMetricsTieBreakers>
 </document>
