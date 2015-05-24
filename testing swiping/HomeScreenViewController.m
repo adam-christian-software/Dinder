@@ -12,7 +12,7 @@
 @interface HomeScreenViewController ()
 @end
 
-@implementation HomeScreenViewController
+@implementation HomeScreenViewController : UIViewController
 
 - (void)viewDidLoad
 {

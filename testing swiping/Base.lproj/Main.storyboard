@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="YSf-8y-cfU">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Home Screen View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="fWB-IJ-2hu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9xo-fA-ewv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController navigationBarHidden="YES" id="YSf-8y-cfU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lBi-tM-TY6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="fyb-CO-qs3">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="9h3-Fc-VLp"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-42" y="271"/>
+        </scene>
+        <!--Login-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="HomeScreenViewController" sceneMemberID="viewController">
+                <viewController title="Login" id="vXZ-lx-hvc" customClass="HomeScreenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -32,7 +51,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Login with Facebook"/>
                                 <connections>
-                                    <segue destination="c2J-2t-hbB" kind="modal" id="Xrb-c0-nhJ"/>
+                                    <segue destination="c2J-2t-hbB" kind="custom" identifier="FromLeft" customClass="FromLeftSegue" id="cKM-Yc-Ymq"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DinderLogoText" translatesAutoresizingMaskIntoConstraints="NO" id="iTh-9r-SvQ">
@@ -42,14 +61,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Cov-HB-nD1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="392" y="271"/>
         </scene>
-        <!--Title-->
+        <!--Swiping-->
         <scene sceneID="jLP-La-7uC">
             <objects>
-                <viewController id="c2J-2t-hbB" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Swiping" id="c2J-2t-hbB" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2wz-iT-4Ow"/>
                         <viewControllerLayoutGuide type="bottom" id="uBS-6N-nXi"/>
@@ -114,7 +135,6 @@
         <!--Item 1-->
         <scene sceneID="0I8-0e-QVc">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fzE-hS-n3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Du5-HR-WmP" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fWO-1B-80K"/>
@@ -162,8 +182,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Z3R-Xz-1Yu"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fzE-hS-n3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1342" y="-110"/>
+            <point key="canvasLocation" x="1342" y="-109.99999999999999"/>
         </scene>
     </scenes>
     <resources>
@@ -182,6 +203,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="5XS-d8-R50"/>
+        <segue reference="cKM-Yc-Ymq"/>
     </inferredMetricsTieBreakers>
 </document>

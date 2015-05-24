@@ -27,6 +27,7 @@
 		99B7AECF192D513800C1B49C /* DraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B7AECE192D513800C1B49C /* DraggableView.m */; };
 		99B7AED2192E914500C1B49C /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B7AED1192E914500C1B49C /* OverlayView.m */; };
 		99FDDE7919A992F200371454 /* DraggableViewBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FDDE7819A992F200371454 /* DraggableViewBackground.m */; };
+		B8919DBE1B0DAFA6009311C5 /* FromLeftSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B8919DBD1B0DAFA6009311C5 /* FromLeftSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		99B7AED1192E914500C1B49C /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
 		99FDDE7719A992F200371454 /* DraggableViewBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableViewBackground.h; sourceTree = "<group>"; };
 		99FDDE7819A992F200371454 /* DraggableViewBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableViewBackground.m; sourceTree = "<group>"; };
+		B8919DBC1B0DAFA5009311C5 /* FromLeftSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromLeftSegue.h; sourceTree = "<group>"; };
+		B8919DBD1B0DAFA6009311C5 /* FromLeftSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromLeftSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				7BEDD9861AECD927002DCA1D /* SettingsView.h */,
 				7BEDD9871AECD927002DCA1D /* SettingsView.m */,
 				7B280F251AECB76B0088E222 /* HomeScreenViewController.m */,
+				B8919DBC1B0DAFA5009311C5 /* FromLeftSegue.h */,
+				B8919DBD1B0DAFA6009311C5 /* FromLeftSegue.m */,
 				7B280F261AECB76B0088E222 /* HomeScreenViewController.h */,
 				99B7AEA7192D50D500C1B49C /* AppDelegate.h */,
 				99B7AEA8192D50D500C1B49C /* AppDelegate.m */,
@@ -290,6 +295,7 @@
 				7B280F271AECB76B0088E222 /* HomeScreenViewController.m in Sources */,
 				99B7AECF192D513800C1B49C /* DraggableView.m in Sources */,
 				99B7AEA5192D50D500C1B49C /* main.m in Sources */,
+				B8919DBE1B0DAFA6009311C5 /* FromLeftSegue.m in Sources */,
 				7BEDD9881AECD927002DCA1D /* SettingsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
