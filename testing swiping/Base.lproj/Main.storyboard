@@ -8,7 +8,6 @@
         <!--Navigation Controller-->
         <scene sceneID="fWB-IJ-2hu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9xo-fA-ewv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController navigationBarHidden="YES" id="YSf-8y-cfU" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lBi-tM-TY6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -21,6 +20,7 @@
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="9h3-Fc-VLp"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9xo-fA-ewv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-42" y="271"/>
         </scene>
@@ -85,7 +85,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Du5-HR-WmP" kind="modal" id="RfH-z5-Rya"/>
+                                    <segue destination="Du5-HR-WmP" kind="custom" customClass="FromLeftSegue" id="t4b-3h-nhH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbx-WV-uo9">
@@ -94,7 +94,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fmf-bm-3dk" kind="modal" id="m4w-Dx-nc5"/>
+                                    <segue destination="fmf-bm-3dk" kind="custom" customClass="FromRightSegue" id="7ga-Zn-ac6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -203,6 +203,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="cKM-Yc-Ymq"/>
+        <segue reference="5XS-d8-R50"/>
     </inferredMetricsTieBreakers>
 </document>
