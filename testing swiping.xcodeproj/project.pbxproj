@@ -136,27 +136,13 @@
 		99B7AE9E192D50D500C1B49C /* testing swiping */ = {
 			isa = PBXGroup;
 			children = (
-				7BEDD9861AECD927002DCA1D /* SettingsView.h */,
-				7BEDD9871AECD927002DCA1D /* SettingsView.m */,
-				7B280F251AECB76B0088E222 /* HomeScreenViewController.m */,
-				B8919DBC1B0DAFA5009311C5 /* FromLeftSegue.h */,
-				B8919DBD1B0DAFA6009311C5 /* FromLeftSegue.m */,
-				B81E9FF61B13CA52004478D3 /* FromRightSegue.h */,
-				B81E9FF71B13CA52004478D3 /* FromRightSegue.m */,
-				7B280F261AECB76B0088E222 /* HomeScreenViewController.h */,
+				B8295B031B280B97001933EF /* Controllers */,
+				B8295B041B280B99001933EF /* Views */,
+				B8295B051B280B9D001933EF /* Segues */,
+				B8295B011B280B7F001933EF /* Models */,
 				99B7AEA7192D50D500C1B49C /* AppDelegate.h */,
 				99B7AEA8192D50D500C1B49C /* AppDelegate.m */,
 				99B7AEAA192D50D500C1B49C /* Main.storyboard */,
-				99B7AEAD192D50D500C1B49C /* ViewController.h */,
-				99B7AEAE192D50D500C1B49C /* ViewController.m */,
-				99FDDE7719A992F200371454 /* DraggableViewBackground.h */,
-				99FDDE7819A992F200371454 /* DraggableViewBackground.m */,
-				7B8DB04F1AEC9F3600E035CF /* HomeScreenView.h */,
-				7B8DB0501AEC9F4400E035CF /* HomeScreenView.m */,
-				99B7AECD192D513800C1B49C /* DraggableView.h */,
-				99B7AECE192D513800C1B49C /* DraggableView.m */,
-				99B7AED0192E914500C1B49C /* OverlayView.h */,
-				99B7AED1192E914500C1B49C /* OverlayView.m */,
 				99B7AEB0192D50D500C1B49C /* Images.xcassets */,
 				99B7AE9F192D50D500C1B49C /* Supporting Files */,
 			);
@@ -190,6 +176,52 @@
 				99B7AEC0192D50D500C1B49C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8295B011B280B7F001933EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B8295B031B280B97001933EF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				99B7AEAD192D50D500C1B49C /* ViewController.h */,
+				99B7AEAE192D50D500C1B49C /* ViewController.m */,
+				7B280F261AECB76B0088E222 /* HomeScreenViewController.h */,
+				7B280F251AECB76B0088E222 /* HomeScreenViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B8295B041B280B99001933EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				99FDDE7719A992F200371454 /* DraggableViewBackground.h */,
+				99FDDE7819A992F200371454 /* DraggableViewBackground.m */,
+				7B8DB04F1AEC9F3600E035CF /* HomeScreenView.h */,
+				7B8DB0501AEC9F4400E035CF /* HomeScreenView.m */,
+				99B7AECD192D513800C1B49C /* DraggableView.h */,
+				99B7AECE192D513800C1B49C /* DraggableView.m */,
+				99B7AED0192E914500C1B49C /* OverlayView.h */,
+				99B7AED1192E914500C1B49C /* OverlayView.m */,
+				7BEDD9861AECD927002DCA1D /* SettingsView.h */,
+				7BEDD9871AECD927002DCA1D /* SettingsView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B8295B051B280B9D001933EF /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				B8919DBC1B0DAFA5009311C5 /* FromLeftSegue.h */,
+				B8919DBD1B0DAFA6009311C5 /* FromLeftSegue.m */,
+				B81E9FF61B13CA52004478D3 /* FromRightSegue.h */,
+				B81E9FF71B13CA52004478D3 /* FromRightSegue.m */,
+			);
+			name = Segues;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
