@@ -145,26 +145,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFK-w6-O6o">
-                                <rect key="frame" x="23" y="338" width="61" height="68"/>
+                                <rect key="frame" x="20" y="345" width="61" height="68"/>
                                 <state key="normal" image="Coffee PNG">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnb-EE-2Ib">
-                                <rect key="frame" x="92" y="351" width="54" height="55"/>
-                                <state key="normal" title="Button" image="BeerGlassIcon">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dN-gc-ONf">
-                                <rect key="frame" x="159" y="352" width="55" height="54"/>
+                                <rect key="frame" x="23" y="280" width="55" height="54"/>
                                 <state key="normal" title="Button" image="Breakfast">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxe-03-IMg">
-                                <rect key="frame" x="217" y="337" width="87" height="83"/>
-                                <state key="normal" title="Button" image="Burger">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -177,6 +165,69 @@
                                     <segue destination="EEj-0i-JVI" kind="unwind" unwindAction="unwindFromRight:" id="ar1-Y2-Drb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLS-Kh-WKb">
+                                <rect key="frame" x="149" y="333" width="99" height="98"/>
+                                <state key="normal" backgroundImage="Cake">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TempMap" translatesAutoresizingMaskIntoConstraints="NO" id="Eyu-le-g9b">
+                                <rect key="frame" x="16" y="65" width="288" height="195"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrg-K7-bWR">
+                                <rect key="frame" x="170" y="275" width="56" height="56"/>
+                                <state key="normal" backgroundImage="SaladIcon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeM-A1-Pt8">
+                                <rect key="frame" x="92" y="350" width="63" height="63"/>
+                                <state key="normal" backgroundImage="Cocktails">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZH-tt-HLx">
+                                <rect key="frame" x="223" y="336" width="91" height="91"/>
+                                <state key="normal" backgroundImage="Ice Cream Cone">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLf-qT-mUh">
+                                <rect key="frame" x="94" y="275" width="58" height="59"/>
+                                <state key="normal" backgroundImage="Egg Bacon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfK-Tz-UnE">
+                                <rect key="frame" x="15" y="436" width="66" height="32"/>
+                                <state key="normal" backgroundImage="1Dollar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJh-Bg-lS1">
+                                <rect key="frame" x="165" y="436" width="66" height="32"/>
+                                <state key="normal" backgroundImage="3Dollars">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlA-n3-F1D">
+                                <rect key="frame" x="240" y="436" width="66" height="32"/>
+                                <state key="normal" backgroundImage="4Dollars">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l53-8N-2Bm">
+                                <rect key="frame" x="90" y="436" width="66" height="32"/>
+                                <state key="normal" backgroundImage="2Dollars">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxe-03-IMg">
+                                <rect key="frame" x="225" y="261" width="87" height="83"/>
+                                <state key="normal" title="Button" image="Burger">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -185,17 +236,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fzE-hS-n3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="EEj-0i-JVI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1342" y="-109.99999999999999"/>
+            <point key="canvasLocation" x="1342" y="-110"/>
         </scene>
     </scenes>
     <resources>
-        <image name="BeerGlassIcon" width="512" height="512"/>
+        <image name="1Dollar" width="162" height="90"/>
+        <image name="2Dollars" width="162" height="90"/>
+        <image name="3Dollars" width="162" height="90"/>
+        <image name="4Dollars" width="162" height="90"/>
         <image name="Breakfast" width="512" height="512"/>
         <image name="Burger" width="512" height="512"/>
+        <image name="Cake" width="512" height="512"/>
+        <image name="Cocktails" width="512" height="512"/>
         <image name="Coffee PNG" width="512" height="512"/>
         <image name="DinderLogoText" width="300" height="150"/>
+        <image name="Egg Bacon" width="512" height="512"/>
+        <image name="Ice Cream Cone" width="512" height="512"/>
         <image name="Match" width="512" height="512"/>
         <image name="Menu" width="256" height="256"/>
+        <image name="SaladIcon" width="512" height="512"/>
+        <image name="TempMap" width="500" height="299"/>
         <image name="noButton" width="70" height="70"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
