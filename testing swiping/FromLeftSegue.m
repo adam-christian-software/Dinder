@@ -22,7 +22,9 @@
     transition.type = kCATransitionPush; //kCATransitionMoveIn; //, kCATransitionPush, kCATransitionReveal, kCATransitionFade
     transition.subtype = kCATransitionFromLeft; //kCATransitionFromLeft, kCATransitionFromRight, kCATransitionFromTop, kCATransitionFromBottom
     
-    
+    NSString *title = sourceViewController.title;
+    NSString *title2 = destinationController.title;
+    NSLog(@"Perform Left Segue transtition from %@ to %@", title, title2);
     
     [sourceViewController.navigationController.view.layer addAnimation:transition
                                                                 forKey:kCATransition];
