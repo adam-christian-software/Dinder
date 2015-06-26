@@ -11,6 +11,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>SimpleTable.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>testing swiping.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,6 +32,16 @@
 			<true/>
 		</dict>
 		<key>99B7AEB5192D50D500C1B49C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B880750F1B3D237200A6C299</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B88075271B3D237300A6C299</key>
 		<dict>
 			<key>primary</key>
 			<true/>

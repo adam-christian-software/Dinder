@@ -28,6 +28,9 @@
 		99B7AED2192E914500C1B49C /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B7AED1192E914500C1B49C /* OverlayView.m */; };
 		99FDDE7919A992F200371454 /* DraggableViewBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FDDE7819A992F200371454 /* DraggableViewBackground.m */; };
 		B81E9FF81B13CA52004478D3 /* FromRightSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B81E9FF71B13CA52004478D3 /* FromRightSegue.m */; };
+		B880752F1B3D237300A6C299 /* SimpleTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B880752E1B3D237300A6C299 /* SimpleTableTests.m */; };
+		B88075381B3D260200A6C299 /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88075371B3D260200A6C299 /* SimpleTableViewController.m */; };
+		B880753B1B3D276800A6C299 /* SimpleTableAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B880753A1B3D276800A6C299 /* SimpleTableAppDelegate.m */; };
 		B8919DBE1B0DAFA6009311C5 /* FromLeftSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B8919DBD1B0DAFA6009311C5 /* FromLeftSegue.m */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 99B7AE94192D50D500C1B49C;
 			remoteInfo = "testing swiping";
+		};
+		B88075291B3D237300A6C299 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99B7AE8D192D50D500C1B49C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B880750F1B3D237200A6C299;
+			remoteInfo = SimpleTable;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -75,6 +85,14 @@
 		99FDDE7819A992F200371454 /* DraggableViewBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableViewBackground.m; sourceTree = "<group>"; };
 		B81E9FF61B13CA52004478D3 /* FromRightSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromRightSegue.h; sourceTree = "<group>"; };
 		B81E9FF71B13CA52004478D3 /* FromRightSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromRightSegue.m; sourceTree = "<group>"; };
+		B88075101B3D237200A6C299 /* SimpleTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88075281B3D237300A6C299 /* SimpleTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B880752D1B3D237300A6C299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B880752E1B3D237300A6C299 /* SimpleTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableTests.m; sourceTree = "<group>"; };
+		B88075361B3D260200A6C299 /* SimpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewController.h; sourceTree = "<group>"; };
+		B88075371B3D260200A6C299 /* SimpleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewController.m; sourceTree = "<group>"; };
+		B88075391B3D276800A6C299 /* SimpleTableAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableAppDelegate.h; sourceTree = "<group>"; };
+		B880753A1B3D276800A6C299 /* SimpleTableAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableAppDelegate.m; sourceTree = "<group>"; };
 		B8919DBC1B0DAFA5009311C5 /* FromLeftSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromLeftSegue.h; sourceTree = "<group>"; };
 		B8919DBD1B0DAFA6009311C5 /* FromLeftSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromLeftSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +118,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B880750D1B3D237200A6C299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88075251B3D237300A6C299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -108,6 +140,7 @@
 			children = (
 				99B7AE9E192D50D500C1B49C /* testing swiping */,
 				99B7AEBD192D50D500C1B49C /* testing swipingTests */,
+				B880752B1B3D237300A6C299 /* SimpleTableTests */,
 				99B7AE97192D50D500C1B49C /* Frameworks */,
 				99B7AE96192D50D500C1B49C /* Products */,
 			);
@@ -118,6 +151,8 @@
 			children = (
 				99B7AE95192D50D500C1B49C /* testing swiping.app */,
 				99B7AEB6192D50D500C1B49C /* testing swipingTests.xctest */,
+				B88075101B3D237200A6C299 /* SimpleTable.app */,
+				B88075281B3D237300A6C299 /* SimpleTableTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,6 +223,10 @@
 		B8295B031B280B97001933EF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B88075361B3D260200A6C299 /* SimpleTableViewController.h */,
+				B88075371B3D260200A6C299 /* SimpleTableViewController.m */,
+				B88075391B3D276800A6C299 /* SimpleTableAppDelegate.h */,
+				B880753A1B3D276800A6C299 /* SimpleTableAppDelegate.m */,
 				99B7AEAD192D50D500C1B49C /* ViewController.h */,
 				99B7AEAE192D50D500C1B49C /* ViewController.m */,
 				7B280F261AECB76B0088E222 /* HomeScreenViewController.h */,
@@ -222,6 +261,23 @@
 				B81E9FF71B13CA52004478D3 /* FromRightSegue.m */,
 			);
 			name = Segues;
+			sourceTree = "<group>";
+		};
+		B880752B1B3D237300A6C299 /* SimpleTableTests */ = {
+			isa = PBXGroup;
+			children = (
+				B880752E1B3D237300A6C299 /* SimpleTableTests.m */,
+				B880752C1B3D237300A6C299 /* Supporting Files */,
+			);
+			path = SimpleTableTests;
+			sourceTree = "<group>";
+		};
+		B880752C1B3D237300A6C299 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B880752D1B3D237300A6C299 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +318,41 @@
 			productReference = 99B7AEB6192D50D500C1B49C /* testing swipingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B880750F1B3D237200A6C299 /* SimpleTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B88075341B3D237300A6C299 /* Build configuration list for PBXNativeTarget "SimpleTable" */;
+			buildPhases = (
+				B880750C1B3D237200A6C299 /* Sources */,
+				B880750D1B3D237200A6C299 /* Frameworks */,
+				B880750E1B3D237200A6C299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleTable;
+			productName = SimpleTable;
+			productReference = B88075101B3D237200A6C299 /* SimpleTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B88075271B3D237300A6C299 /* SimpleTableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B88075351B3D237300A6C299 /* Build configuration list for PBXNativeTarget "SimpleTableTests" */;
+			buildPhases = (
+				B88075241B3D237300A6C299 /* Sources */,
+				B88075251B3D237300A6C299 /* Frameworks */,
+				B88075261B3D237300A6C299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B880752A1B3D237300A6C299 /* PBXTargetDependency */,
+			);
+			name = SimpleTableTests;
+			productName = SimpleTableTests;
+			productReference = B88075281B3D237300A6C299 /* SimpleTableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -276,6 +367,13 @@
 					};
 					99B7AEB5192D50D500C1B49C = {
 						TestTargetID = 99B7AE94192D50D500C1B49C;
+					};
+					B880750F1B3D237200A6C299 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					B88075271B3D237300A6C299 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = B880750F1B3D237200A6C299;
 					};
 				};
 			};
@@ -294,6 +392,8 @@
 			targets = (
 				99B7AE94192D50D500C1B49C /* testing swiping */,
 				99B7AEB5192D50D500C1B49C /* testing swipingTests */,
+				B880750F1B3D237200A6C299 /* SimpleTable */,
+				B88075271B3D237300A6C299 /* SimpleTableTests */,
 			);
 		};
 /* End PBXProject section */
@@ -317,6 +417,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B880750E1B3D237200A6C299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88075261B3D237300A6C299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -324,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B880753B1B3D276800A6C299 /* SimpleTableAppDelegate.m in Sources */,
 				99FDDE7919A992F200371454 /* DraggableViewBackground.m in Sources */,
 				7B8DB0511AEC9F4400E035CF /* HomeScreenView.m in Sources */,
 				B81E9FF81B13CA52004478D3 /* FromRightSegue.m in Sources */,
@@ -335,6 +450,7 @@
 				99B7AEA5192D50D500C1B49C /* main.m in Sources */,
 				B8919DBE1B0DAFA6009311C5 /* FromLeftSegue.m in Sources */,
 				7BEDD9881AECD927002DCA1D /* SettingsView.m in Sources */,
+				B88075381B3D260200A6C299 /* SimpleTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +462,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B880750C1B3D237200A6C299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88075241B3D237300A6C299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B880752F1B3D237300A6C299 /* SimpleTableTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -353,6 +484,11 @@
 			isa = PBXTargetDependency;
 			target = 99B7AE94192D50D500C1B49C /* testing swiping */;
 			targetProxy = 99B7AEBB192D50D500C1B49C /* PBXContainerItemProxy */;
+		};
+		B880752A1B3D237300A6C299 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B880750F1B3D237200A6C299 /* SimpleTable */;
+			targetProxy = B88075291B3D237300A6C299 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -526,6 +662,92 @@
 			};
 			name = Release;
 		};
+		B88075301B3D237300A6C299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimpleTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B88075311B3D237300A6C299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SimpleTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B88075321B3D237300A6C299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimpleTableTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTable.app/SimpleTable";
+			};
+			name = Debug;
+		};
+		B88075331B3D237300A6C299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SimpleTableTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTable.app/SimpleTable";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -555,6 +777,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B88075341B3D237300A6C299 /* Build configuration list for PBXNativeTarget "SimpleTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B88075301B3D237300A6C299 /* Debug */,
+				B88075311B3D237300A6C299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B88075351B3D237300A6C299 /* Build configuration list for PBXNativeTarget "SimpleTableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B88075321B3D237300A6C299 /* Debug */,
+				B88075331B3D237300A6C299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

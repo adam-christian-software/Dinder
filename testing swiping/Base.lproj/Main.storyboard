@@ -106,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="855" y="271"/>
         </scene>
-        <!--View Controller-->
+        <!--Simple Table View Controller-->
         <scene sceneID="czg-km-yyH">
             <objects>
-                <viewController id="p3C-qL-yRd" sceneMemberID="viewController">
+                <viewController id="p3C-qL-yRd" customClass="SimpleTableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zPm-VO-aiV"/>
                         <viewControllerLayoutGuide type="bottom" id="d8g-QP-vjX"/>
@@ -141,6 +141,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="N75-Xe-1lf">
                                 <rect key="frame" x="0.0" y="116" width="320" height="485"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="p3C-qL-yRd" id="4C2-e2-A1G"/>
+                                    <outlet property="delegate" destination="p3C-qL-yRd" id="jTV-Rb-47k"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
