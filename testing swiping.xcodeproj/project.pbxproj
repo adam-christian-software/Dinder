@@ -10,6 +10,8 @@
 		7B280F271AECB76B0088E222 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B280F251AECB76B0088E222 /* LoginViewController.m */; };
 		7B8DB0511AEC9F4400E035CF /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DB0501AEC9F4400E035CF /* LoginView.m */; };
 		7BEDD9881AECD927002DCA1D /* SettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEDD9871AECD927002DCA1D /* SettingsView.m */; };
+		7BF1E32E1B408F23002ABC25 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1E32D1B408F23002ABC25 /* SignUpViewController.m */; };
+		7BF1E3311B408F3F002ABC25 /* SignUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1E3301B408F3F002ABC25 /* SignUpView.m */; };
 		99B7AE99192D50D500C1B49C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B7AE98192D50D500C1B49C /* Foundation.framework */; };
 		99B7AE9B192D50D500C1B49C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B7AE9A192D50D500C1B49C /* CoreGraphics.framework */; };
 		99B7AE9D192D50D500C1B49C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B7AE9C192D50D500C1B49C /* UIKit.framework */; };
@@ -58,6 +60,10 @@
 		7B8DB0501AEC9F4400E035CF /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		7BEDD9861AECD927002DCA1D /* SettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsView.h; sourceTree = "<group>"; };
 		7BEDD9871AECD927002DCA1D /* SettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsView.m; sourceTree = "<group>"; };
+		7BF1E32C1B408F23002ABC25 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		7BF1E32D1B408F23002ABC25 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		7BF1E32F1B408F3F002ABC25 /* SignUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpView.h; sourceTree = "<group>"; };
+		7BF1E3301B408F3F002ABC25 /* SignUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpView.m; sourceTree = "<group>"; };
 		99B7AE95192D50D500C1B49C /* testing swiping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "testing swiping.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B7AE98192D50D500C1B49C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		99B7AE9A192D50D500C1B49C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -228,6 +234,8 @@
 				99B7AEAE192D50D500C1B49C /* ViewController.m */,
 				7B280F261AECB76B0088E222 /* LoginViewController.h */,
 				7B280F251AECB76B0088E222 /* LoginViewController.m */,
+				7BF1E32C1B408F23002ABC25 /* SignUpViewController.h */,
+				7BF1E32D1B408F23002ABC25 /* SignUpViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -245,6 +253,8 @@
 				99B7AED1192E914500C1B49C /* OverlayView.m */,
 				7BEDD9861AECD927002DCA1D /* SettingsView.h */,
 				7BEDD9871AECD927002DCA1D /* SettingsView.m */,
+				7BF1E32F1B408F3F002ABC25 /* SignUpView.h */,
+				7BF1E3301B408F3F002ABC25 /* SignUpView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -456,8 +466,10 @@
 				7B280F271AECB76B0088E222 /* LoginViewController.m in Sources */,
 				99B7AECF192D513800C1B49C /* DraggableView.m in Sources */,
 				99B7AEA5192D50D500C1B49C /* main.m in Sources */,
+				7BF1E3311B408F3F002ABC25 /* SignUpView.m in Sources */,
 				B8919DBE1B0DAFA6009311C5 /* FromLeftSegue.m in Sources */,
 				7BEDD9881AECD927002DCA1D /* SettingsView.m in Sources */,
+				7BF1E32E1B408F23002ABC25 /* SignUpViewController.m in Sources */,
 				B88075381B3D260200A6C299 /* SimpleTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

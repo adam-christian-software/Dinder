@@ -1,27 +1,21 @@
 //
-//  ViewController.m
+//  SignUpViewController.m
 //  testing swiping
 //
-//  Created by Richard Kim on 5/21/14.
-//  Copyright (c) 2014 Richard Kim. All rights reserved.
+//  Created by Kamau Vassall on 6/28/15.
+//  Copyright (c) 2015 Richard Kim. All rights reserved.
 //
-//  @cwRichardKim for updates and requests
 
-#import "ViewController.h"
-#import "DraggableViewBackground.h"
+#import "SignUpViewController.h"
 
-
-@interface ViewController ()
-
+@interface SignUpViewController ()
 @end
 
-@implementation ViewController
+@implementation SignUpViewController
 
-- (void)viewDidLoad
-{
-    DraggableViewBackground *draggableBackground = [[DraggableViewBackground alloc]initWithFrame:self.view.frame];
-    [self.view insertSubview:draggableBackground atIndex:0];
+- (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
 }
 
 - (void)viewDidUnload
