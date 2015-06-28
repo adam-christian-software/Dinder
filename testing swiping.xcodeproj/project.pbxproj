@@ -171,12 +171,11 @@
 		99B7AE9E192D50D500C1B49C /* testing swiping */ = {
 			isa = PBXGroup;
 			children = (
+				B8F879CD1B40892C0098C766 /* Delegates */,
 				B8295B031B280B97001933EF /* Controllers */,
 				B8295B041B280B99001933EF /* Views */,
 				B8295B051B280B9D001933EF /* Segues */,
 				B8295B011B280B7F001933EF /* Models */,
-				99B7AEA7192D50D500C1B49C /* AppDelegate.h */,
-				99B7AEA8192D50D500C1B49C /* AppDelegate.m */,
 				99B7AEAA192D50D500C1B49C /* Main.storyboard */,
 				99B7AEB0192D50D500C1B49C /* Images.xcassets */,
 				99B7AE9F192D50D500C1B49C /* Supporting Files */,
@@ -225,8 +224,6 @@
 			children = (
 				B88075361B3D260200A6C299 /* SimpleTableViewController.h */,
 				B88075371B3D260200A6C299 /* SimpleTableViewController.m */,
-				B88075391B3D276800A6C299 /* SimpleTableAppDelegate.h */,
-				B880753A1B3D276800A6C299 /* SimpleTableAppDelegate.m */,
 				99B7AEAD192D50D500C1B49C /* ViewController.h */,
 				99B7AEAE192D50D500C1B49C /* ViewController.m */,
 				7B280F261AECB76B0088E222 /* LoginViewController.h */,
@@ -278,6 +275,17 @@
 				B880752D1B3D237300A6C299 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8F879CD1B40892C0098C766 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				B88075391B3D276800A6C299 /* SimpleTableAppDelegate.h */,
+				B880753A1B3D276800A6C299 /* SimpleTableAppDelegate.m */,
+				99B7AEA7192D50D500C1B49C /* AppDelegate.h */,
+				99B7AEA8192D50D500C1B49C /* AppDelegate.m */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
