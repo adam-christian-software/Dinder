@@ -7,12 +7,12 @@
 //
 //  @cwRichardKim for updates and requests
 
-#import "HomeScreenViewController.h"
+#import "LoginViewController.h"
 
-@interface HomeScreenViewController ()
+@interface LoginViewController ()
 @end
 
-@implementation HomeScreenViewController : UIViewController
+@implementation LoginViewController : UIViewController
 
 - (void)viewDidLoad
 {

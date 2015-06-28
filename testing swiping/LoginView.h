@@ -32,6 +32,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeScreenView : UIView
+@interface LoginView : UIView
 
 @end

@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Richard Kim. All rights reserved.
 //
 
-#import "HomeScreenView.h"
+#import "LoginView.h"
 
-@implementation HomeScreenView{
+@implementation LoginView{
     UIImage* titleImage;
 }
 
