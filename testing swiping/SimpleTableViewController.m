@@ -13,24 +13,22 @@
 @end
 
 @implementation SimpleTableViewController
-
-NSArray *restaurants;
-
+{
+    NSArray *restaurantNames;
+    NSArray *restaurantImages;
+}
 - (void)viewDidLoad {
-    restaurants = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
-
     [super viewDidLoad];
+    restaurantNames = [NSArray arrayWithObjects:@"Uchi", @"Franklin Barbecue", @"Eddie V's Edgewater Grille", @"Whole Foods Market", @"Uchiko", @"Truluck's Seafood", @"Jack Allen's Kitchen", @"Hopdoddy", @"Turf N Surf Po' Boy", @"Moonshine - Patio Bar & Grill", @"Rudy's Country Store & Bar-B-Q", @"Torchy's Tacos", @"Prelog's", @"Fonda San Miguel", @"Home Slice Pizza", @"Pinthouse Pizza", nil];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    restaurantImages = [NSArray arrayWithObjects:@"Restaurant1.jpg", @"Restaurant2.jpg", @"Restaurant3.jpg", @"Restaurant4.jpg", @"Restaurant5.jpg", @"Restaurant6.jpg", @"Restaurant7.jpg", @"Restaurant8.jpg", @"Restaurant9.jpg", @"Restaurant10.jpg", @"Restaurant11.jpg", @"Restaurant12.jpg", @"Restaurant13.jpg", @"Restaurant14.jpg", @"Restaurant15.jpg", @"Restaurant16.jpg", nil];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [restaurants count];
+    return [restaurantNames count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -43,75 +41,26 @@ NSArray *restaurants;
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
     
-    cell.textLabel.text = [restaurants objectAtIndex:indexPath.row];
+    cell.textLabel.text = [restaurantNames objectAtIndex:indexPath.row];
+    cell.imageView.image = [UIImage imageNamed:[restaurantImages objectAtIndex:indexPath.row]];
+    UIImage *image = cell.imageView.image;
+    UIImage *tempImage = nil;
+    CGSize targetSize = CGSizeMake(250, 187);
+    UIGraphicsBeginImageContext(targetSize);
+    
+    CGRect thumbnailRect = CGRectMake(0, 0, 0, 0);
+    thumbnailRect.origin = CGPointMake(0.0,0.0);
+    thumbnailRect.size.width  = targetSize.width;
+    thumbnailRect.size.height = targetSize.height;
+    
+    [image drawInRect:thumbnailRect];
+    
+    tempImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    cell.imageView.image = tempImage;
     return cell;
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
