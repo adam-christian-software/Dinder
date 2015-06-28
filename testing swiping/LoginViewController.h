@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LoginViewController.h
 //  testing swiping
 //
 //  Created by Richard Kim on 5/21/14.

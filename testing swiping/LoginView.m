@@ -1,5 +1,5 @@
 //
-//  HomeScreenView.m
+//  LoginView.h
 //  testing swiping
 //
 //  Created by Richard Kim on 8/23/14.
@@ -8,9 +8,7 @@
 
 #import "LoginView.h"
 
-@implementation LoginView{
-    UIImage* titleImage;
-}
+@implementation LoginView
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -25,9 +23,8 @@
 //%%% sets up the extra buttons on the screen
 -(void)setupView
 {
-#warning customize all of this.  These are just place holders to make it look pretty
-    self.backgroundColor = [UIColor colorWithRed:.92 green:.93 blue:.95 alpha:1]; //the gray background colors
-    titleImage = [UIImage imageNamed:@"LaunchImage"];
+    //the gray background colors
+    self.backgroundColor = [UIColor colorWithRed:.92 green:.93 blue:.95 alpha:1];
 }
 
 @end
