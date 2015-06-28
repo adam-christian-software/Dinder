@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-42" y="271"/>
         </scene>
-        <!--Login-->
+        <!--Login Screen-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController title="Login" id="vXZ-lx-hvc" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController title="Login Screen" id="vXZ-lx-hvc" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="392" y="271"/>
         </scene>
-        <!--Swiping-->
+        <!--Swiping Screen-->
         <scene sceneID="jLP-La-7uC">
             <objects>
-                <viewController title="Swiping" id="c2J-2t-hbB" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Swiping Screen" id="c2J-2t-hbB" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2wz-iT-4Ow"/>
                         <viewControllerLayoutGuide type="bottom" id="uBS-6N-nXi"/>
@@ -112,10 +112,10 @@
             </objects>
             <point key="canvasLocation" x="855" y="271"/>
         </scene>
-        <!--Simple Table View Controller-->
+        <!--Matches Screen-->
         <scene sceneID="czg-km-yyH">
             <objects>
-                <viewController id="p3C-qL-yRd" customClass="SimpleTableViewController" sceneMemberID="viewController">
+                <viewController title="Matches Screen" id="p3C-qL-yRd" customClass="SimpleTableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zPm-VO-aiV"/>
                         <viewControllerLayoutGuide type="bottom" id="d8g-QP-vjX"/>
@@ -163,10 +163,10 @@
             </objects>
             <point key="canvasLocation" x="1342" y="590"/>
         </scene>
-        <!--Settings-->
+        <!--Filters Screen-->
         <scene sceneID="0I8-0e-QVc">
             <objects>
-                <viewController title="Settings" id="Du5-HR-WmP" sceneMemberID="viewController">
+                <viewController title="Filters Screen" id="Du5-HR-WmP" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fWO-1B-80K"/>
                         <viewControllerLayoutGuide type="bottom" id="2OM-gJ-5yO"/>
