@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="YSf-8y-cfU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="YSf-8y-cfU">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
@@ -191,6 +191,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="jtV-h1-WZO" kind="push" identifier="Segue" id="Wsx-55-yna"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="621-yO-ldi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="int-3g-9BY" userLabel="Exit" sceneMemberID="exit"/>
@@ -201,6 +204,37 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1342" y="590"/>
+        </scene>
+        <!--Restaurant Screen-->
+        <scene sceneID="J6t-Wb-0ay">
+            <objects>
+                <viewController title="Restaurant Screen" id="jtV-h1-WZO" customClass="RestaurantViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XZ1-gg-V3r"/>
+                        <viewControllerLayoutGuide type="bottom" id="X55-gh-y1D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PMG-PL-6Gy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPI-cN-wa6">
+                                <rect key="frame" x="249" y="0.0" width="84" height="87"/>
+                                <state key="normal" image="noButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wq2-iV-orr" kind="unwind" unwindAction="unwindFromLeft:" id="ox3-uQ-WWj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="A3J-Kf-fuF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jbp-v9-6h9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="wq2-iV-orr" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1778" y="590"/>
         </scene>
         <!--Filters Screen-->
         <scene sceneID="0I8-0e-QVc">
