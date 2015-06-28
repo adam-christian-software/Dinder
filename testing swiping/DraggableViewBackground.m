@@ -7,13 +7,13 @@
 //
 
 #import "DraggableViewBackground.h"
-#import "SettingsView.h"
+#import "FiltersView.h"
 
 @implementation DraggableViewBackground{
     NSInteger cardsLoadedIndex; //%%% the index of the card you have loaded into the loadedCards array last
     NSMutableArray *loadedCards; //%%% the array of card loaded (change max_buffer_size to increase or decrease the number of cards this holds)
     
-    SettingsView *settingsView;
+    FiltersView *settingsView;
     
     UIButton* checkButton;
     UIButton* xButton;
@@ -68,7 +68,7 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
 
 -(void)setupSettingsView
 {
-    settingsView = [[SettingsView alloc]initWithFrame:CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2 + 10, CARD_WIDTH, CARD_HEIGHT)];
+    settingsView = [[FiltersView alloc]initWithFrame:CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2 + 10, CARD_WIDTH, CARD_HEIGHT)];
     //settingsView.information.text = [exampleCardLabels objectAtIndex:index]; //%%% placeholder for card-specific information
     //settingsView.delegate = self;
 }

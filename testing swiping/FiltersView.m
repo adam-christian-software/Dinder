@@ -1,5 +1,5 @@
 //
-//  SettingsView.m
+//  FiltersView.m
 //  testing swiping
 //
 //  Created by Richard Kim on 5/22/14.
@@ -7,9 +7,9 @@
 //
 //  @cwRichardKim for updates and requests
 
-#import "SettingsView.h"
+#import "FiltersView.h"
 
-@implementation SettingsView
+@implementation FiltersView
 @synthesize imageView;
 
 - (id)initWithFrame:(CGRect)frame

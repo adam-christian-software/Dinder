@@ -1,5 +1,5 @@
 //
-//  SettingsView.h
+//  FiltersView.h
 //  testing swiping
 //
 //  Created by Richard Kim on 5/22/14.
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingsView : UIView
+@interface FiltersView : UIView
 
 @property (nonatomic, strong) UIImageView *imageView;
 
