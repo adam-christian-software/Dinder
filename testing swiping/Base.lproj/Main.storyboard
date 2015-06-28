@@ -100,7 +100,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wr5-iT-g8S" kind="unwind" unwindAction="unwindFromLeft:" id="LL7-G5-RZw"/>
+                                    <segue destination="wr5-iT-g8S" kind="unwind" unwindAction="unwindFromRight:" id="Yvh-Us-PUl"/>
                                 </connections>
                             </button>
                         </subviews>
