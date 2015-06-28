@@ -128,18 +128,15 @@
                                 </connections>
                             </button>
                             <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="E20-SO-Vwe">
-                                <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="65" width="320" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
                                     <string>Title</string>
                                 </scopeButtonTitles>
-                                <connections>
-                                    <outlet property="delegate" destination="p3C-qL-yRd" id="Dz9-TL-onE"/>
-                                </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="N75-Xe-1lf">
-                                <rect key="frame" x="0.0" y="116" width="320" height="485"/>
+                                <rect key="frame" x="0.0" y="109" width="320" height="485"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="p3C-qL-yRd" id="4C2-e2-A1G"/>
@@ -149,19 +146,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="searchDisplayController" destination="vFf-b1-lNs" id="Vr6-v0-g0J"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="621-yO-ldi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="int-3g-9BY" userLabel="Exit" sceneMemberID="exit"/>
                 <searchDisplayController id="vFf-b1-lNs">
                     <connections>
-                        <outlet property="delegate" destination="p3C-qL-yRd" id="ytH-Wu-Hhe"/>
                         <outlet property="searchBar" destination="E20-SO-Vwe" id="J0c-sY-2aP"/>
-                        <outlet property="searchContentsController" destination="p3C-qL-yRd" id="Ql4-iL-AG1"/>
-                        <outlet property="searchResultsDataSource" destination="p3C-qL-yRd" id="l9t-v6-TtA"/>
-                        <outlet property="searchResultsDelegate" destination="p3C-qL-yRd" id="zoN-0Y-N0X"/>
                     </connections>
                 </searchDisplayController>
             </objects>
