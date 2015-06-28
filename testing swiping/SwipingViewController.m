@@ -8,7 +8,7 @@
 //  @cwRichardKim for updates and requests
 
 #import "SwipingViewController.h"
-#import "DraggableViewBackground.h"
+#import "SwipingViewBackground.h"
 
 
 @interface SwipingViewController ()
@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad
 {
-    DraggableViewBackground *draggableBackground = [[DraggableViewBackground alloc]initWithFrame:self.view.frame];
+    SwipingViewBackground *draggableBackground = [[SwipingViewBackground alloc]initWithFrame:self.view.frame];
     [self.view insertSubview:draggableBackground atIndex:0];
     [super viewDidLoad];
 }

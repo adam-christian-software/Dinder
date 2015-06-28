@@ -210,7 +210,7 @@
                         <viewControllerLayoutGuide type="top" id="fWO-1B-80K"/>
                         <viewControllerLayoutGuide type="bottom" id="2OM-gJ-5yO"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QIk-7p-ZZc">
+                    <view key="view" contentMode="scaleToFill" id="QIk-7p-ZZc" customClass="FiltersView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

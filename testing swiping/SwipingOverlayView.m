@@ -7,9 +7,9 @@
 //
 //  @cwRichardKim for updates and requests
 
-#import "OverlayView.h"
+#import "SwipingOverlayView.h"
 
-@implementation OverlayView
+@implementation SwipingOverlayView
 @synthesize imageView;
 
 - (id)initWithFrame:(CGRect)frame

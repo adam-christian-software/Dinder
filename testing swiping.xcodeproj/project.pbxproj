@@ -26,9 +26,9 @@
 		99B7AEBA192D50D500C1B49C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B7AE9C192D50D500C1B49C /* UIKit.framework */; };
 		99B7AEC2192D50D500C1B49C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99B7AEC0192D50D500C1B49C /* InfoPlist.strings */; };
 		99B7AEC4192D50D500C1B49C /* testing_swipingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B7AEC3192D50D500C1B49C /* testing_swipingTests.m */; };
-		99B7AECF192D513800C1B49C /* DraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B7AECE192D513800C1B49C /* DraggableView.m */; };
-		99B7AED2192E914500C1B49C /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B7AED1192E914500C1B49C /* OverlayView.m */; };
-		99FDDE7919A992F200371454 /* DraggableViewBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FDDE7819A992F200371454 /* DraggableViewBackground.m */; };
+		99B7AECF192D513800C1B49C /* SwipingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B7AECE192D513800C1B49C /* SwipingView.m */; };
+		99B7AED2192E914500C1B49C /* SwipingOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B7AED1192E914500C1B49C /* SwipingOverlayView.m */; };
+		99FDDE7919A992F200371454 /* SwipingViewBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FDDE7819A992F200371454 /* SwipingViewBackground.m */; };
 		B81E9FF81B13CA52004478D3 /* FromRightSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B81E9FF71B13CA52004478D3 /* FromRightSegue.m */; };
 		B880752F1B3D237300A6C299 /* SimpleTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B880752E1B3D237300A6C299 /* SimpleTableTests.m */; };
 		B88075381B3D260200A6C299 /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88075371B3D260200A6C299 /* SimpleTableViewController.m */; };
@@ -85,12 +85,12 @@
 		99B7AEBF192D50D500C1B49C /* testing swipingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testing swipingTests-Info.plist"; sourceTree = "<group>"; };
 		99B7AEC1192D50D500C1B49C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		99B7AEC3192D50D500C1B49C /* testing_swipingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testing_swipingTests.m; sourceTree = "<group>"; };
-		99B7AECD192D513800C1B49C /* DraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableView.h; sourceTree = "<group>"; };
-		99B7AECE192D513800C1B49C /* DraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableView.m; sourceTree = "<group>"; };
-		99B7AED0192E914500C1B49C /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
-		99B7AED1192E914500C1B49C /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
-		99FDDE7719A992F200371454 /* DraggableViewBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableViewBackground.h; sourceTree = "<group>"; };
-		99FDDE7819A992F200371454 /* DraggableViewBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableViewBackground.m; sourceTree = "<group>"; };
+		99B7AECD192D513800C1B49C /* SwipingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipingView.h; sourceTree = "<group>"; };
+		99B7AECE192D513800C1B49C /* SwipingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipingView.m; sourceTree = "<group>"; };
+		99B7AED0192E914500C1B49C /* SwipingOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipingOverlayView.h; sourceTree = "<group>"; };
+		99B7AED1192E914500C1B49C /* SwipingOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipingOverlayView.m; sourceTree = "<group>"; };
+		99FDDE7719A992F200371454 /* SwipingViewBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipingViewBackground.h; sourceTree = "<group>"; };
+		99FDDE7819A992F200371454 /* SwipingViewBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipingViewBackground.m; sourceTree = "<group>"; };
 		B81E9FF61B13CA52004478D3 /* FromRightSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromRightSegue.h; sourceTree = "<group>"; };
 		B81E9FF71B13CA52004478D3 /* FromRightSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromRightSegue.m; sourceTree = "<group>"; };
 		B88075101B3D237200A6C299 /* SimpleTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,16 +236,16 @@
 			children = (
 				B8F879CE1B408E8C0098C766 /* FiltersViewController.h */,
 				B8F879CF1B408E8C0098C766 /* FiltersViewController.m */,
+				7B280F261AECB76B0088E222 /* LoginViewController.h */,
+				7B280F251AECB76B0088E222 /* LoginViewController.m */,
 				B8F879D11B408EA40098C766 /* MatchesViewController.h */,
 				B8F879D21B408EA40098C766 /* MatchesViewController.m */,
+				7BF1E32C1B408F23002ABC25 /* SignUpViewController.h */,
+				7BF1E32D1B408F23002ABC25 /* SignUpViewController.m */,
 				B88075361B3D260200A6C299 /* SimpleTableViewController.h */,
 				B88075371B3D260200A6C299 /* SimpleTableViewController.m */,
 				99B7AEAD192D50D500C1B49C /* SwipingViewController.h */,
 				99B7AEAE192D50D500C1B49C /* SwipingViewController.m */,
-				7B280F261AECB76B0088E222 /* LoginViewController.h */,
-				7B280F251AECB76B0088E222 /* LoginViewController.m */,
-				7BF1E32C1B408F23002ABC25 /* SignUpViewController.h */,
-				7BF1E32D1B408F23002ABC25 /* SignUpViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -253,18 +253,18 @@
 		B8295B041B280B99001933EF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				99FDDE7719A992F200371454 /* DraggableViewBackground.h */,
-				99FDDE7819A992F200371454 /* DraggableViewBackground.m */,
-				7B8DB04F1AEC9F3600E035CF /* LoginView.h */,
-				7B8DB0501AEC9F4400E035CF /* LoginView.m */,
-				99B7AECD192D513800C1B49C /* DraggableView.h */,
-				99B7AECE192D513800C1B49C /* DraggableView.m */,
-				99B7AED0192E914500C1B49C /* OverlayView.h */,
-				99B7AED1192E914500C1B49C /* OverlayView.m */,
 				7BEDD9861AECD927002DCA1D /* FiltersView.h */,
 				7BEDD9871AECD927002DCA1D /* FiltersView.m */,
+				7B8DB04F1AEC9F3600E035CF /* LoginView.h */,
+				7B8DB0501AEC9F4400E035CF /* LoginView.m */,
 				7BF1E32F1B408F3F002ABC25 /* SignUpView.h */,
 				7BF1E3301B408F3F002ABC25 /* SignUpView.m */,
+				99B7AED0192E914500C1B49C /* SwipingOverlayView.h */,
+				99B7AED1192E914500C1B49C /* SwipingOverlayView.m */,
+				99B7AECD192D513800C1B49C /* SwipingView.h */,
+				99B7AECE192D513800C1B49C /* SwipingView.m */,
+				99FDDE7719A992F200371454 /* SwipingViewBackground.h */,
+				99FDDE7819A992F200371454 /* SwipingViewBackground.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -300,10 +300,10 @@
 		B8F879CD1B40892C0098C766 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				B88075391B3D276800A6C299 /* SimpleTableAppDelegate.h */,
-				B880753A1B3D276800A6C299 /* SimpleTableAppDelegate.m */,
 				99B7AEA7192D50D500C1B49C /* AppDelegate.h */,
 				99B7AEA8192D50D500C1B49C /* AppDelegate.m */,
+				B88075391B3D276800A6C299 /* SimpleTableAppDelegate.h */,
+				B880753A1B3D276800A6C299 /* SimpleTableAppDelegate.m */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -468,14 +468,14 @@
 			files = (
 				B8F879D01B408E8C0098C766 /* FiltersViewController.m in Sources */,
 				B880753B1B3D276800A6C299 /* SimpleTableAppDelegate.m in Sources */,
-				99FDDE7919A992F200371454 /* DraggableViewBackground.m in Sources */,
+				99FDDE7919A992F200371454 /* SwipingViewBackground.m in Sources */,
 				7B8DB0511AEC9F4400E035CF /* LoginView.m in Sources */,
 				B81E9FF81B13CA52004478D3 /* FromRightSegue.m in Sources */,
 				99B7AEAF192D50D500C1B49C /* SwipingViewController.m in Sources */,
-				99B7AED2192E914500C1B49C /* OverlayView.m in Sources */,
+				99B7AED2192E914500C1B49C /* SwipingOverlayView.m in Sources */,
 				99B7AEA9192D50D500C1B49C /* AppDelegate.m in Sources */,
 				7B280F271AECB76B0088E222 /* LoginViewController.m in Sources */,
-				99B7AECF192D513800C1B49C /* DraggableView.m in Sources */,
+				99B7AECF192D513800C1B49C /* SwipingView.m in Sources */,
 				99B7AEA5192D50D500C1B49C /* main.m in Sources */,
 				7BF1E3311B408F3F002ABC25 /* SignUpView.m in Sources */,
 				B8919DBE1B0DAFA6009311C5 /* FromLeftSegue.m in Sources */,

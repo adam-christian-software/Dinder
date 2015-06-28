@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Richard Kim. All rights reserved.
 //
 
-#import "DraggableViewBackground.h"
+#import "SwipingViewBackground.h"
 #import "FiltersView.h"
 
-@implementation DraggableViewBackground{
+@implementation SwipingViewBackground{
     NSInteger cardsLoadedIndex; //%%% the index of the card you have loaded into the loadedCards array last
     NSMutableArray *loadedCards; //%%% the array of card loaded (change max_buffer_size to increase or decrease the number of cards this holds)
     
@@ -83,9 +83,9 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
 //%%% creates a card and returns it.  This should be customized to fit your needs.
 // use "index" to indicate where the information should be pulled.  If this doesn't apply to you, feel free
 // to get rid of it (eg: if you are building cards from data from the internet)
--(DraggableView *)createDraggableViewWithDataAtIndex:(NSInteger)index
+-(SwipingView *)createDraggableViewWithDataAtIndex:(NSInteger)index
 {
-    DraggableView *draggableView = [[DraggableView alloc]initWithFrame:CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT - 20)];
+    SwipingView *draggableView = [[SwipingView alloc]initWithFrame:CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT - 20)];
     //draggableView.information.text = [exampleCardLabels objectAtIndex:index]; //%%% placeholder for card-specific information
     draggableView.delegate = self;
     return draggableView;
@@ -100,7 +100,7 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
         
         //%%% loops through the exampleCardsLabels array to create a card for each label.  This should be customized by removing "exampleCardLabels" with your own array of data
         for (int i = 0; i<numCardsLeft; i++) {
-            DraggableView* newCard = [self createDraggableViewWithDataAtIndex:i];
+            SwipingView* newCard = [self createDraggableViewWithDataAtIndex:i];
             [allCards addObject:newCard];
             
             if (i<numLoadedCardsCap) {
@@ -160,7 +160,7 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
 //%%% when you hit the right button, this is called and substitutes the swipe
 -(void)swipeRight
 {
-    DraggableView *dragView = [loadedCards firstObject];
+    SwipingView *dragView = [loadedCards firstObject];
     dragView.overlayView.mode = GGOverlayViewModeRight;
     [UIView animateWithDuration:0.2 animations:^{
         dragView.overlayView.alpha = 1;
@@ -171,7 +171,7 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
 //%%% when you hit the left button, this is called and substitutes the swipe
 -(void)swipeLeft
 {
-    DraggableView *dragView = [loadedCards firstObject];
+    SwipingView *dragView = [loadedCards firstObject];
     dragView.overlayView.mode = GGOverlayViewModeLeft;
     [UIView animateWithDuration:0.2 animations:^{
         dragView.overlayView.alpha = 1;

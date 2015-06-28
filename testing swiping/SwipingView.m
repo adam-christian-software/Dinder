@@ -15,9 +15,9 @@
 #define ROTATION_ANGLE M_PI/8 //%%% Higher = stronger rotation angle
 
 
-#import "DraggableView.h"
+#import "SwipingView.h"
 
-@implementation DraggableView {
+@implementation SwipingView {
     CGFloat xFromCenter;
     CGFloat yFromCenter;
 }
@@ -69,7 +69,7 @@ static const float CARD_WIDTH = 304; //%%% width of the draggable card
         [self addSubview:information];
         [self addSubview:imageView];
         
-        overlayView = [[OverlayView alloc]initWithFrame:CGRectMake(self.frame.size.width/2-100, 0, 0, 0)];
+        overlayView = [[SwipingOverlayView alloc]initWithFrame:CGRectMake(self.frame.size.width/2-100, 0, 0, 0)];
         overlayView.alpha = 0;
         [self addSubview:overlayView];
     }

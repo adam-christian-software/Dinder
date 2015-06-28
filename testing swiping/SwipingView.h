@@ -1,10 +1,11 @@
 //
-//  DraggableViewBackground.h
+//  DraggableView.h
 //  testing swiping
 //
-//  Created by Richard Kim on 8/23/14.
+//  Created by Richard Kim on 5/21/14.
 //  Copyright (c) 2014 Richard Kim. All rights reserved.
 //
+//  @cwRichardKim for updates and requests
 
 /*
  
@@ -31,16 +32,26 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "DraggableView.h"
+#import "SwipingOverlayView.h"
 
-@interface DraggableViewBackground : UIView <DraggableViewDelegate>
+@protocol SwipingViewDelegate <NSObject>
 
-//methods called in DraggableView
 -(void)cardSwipedLeft:(UIView *)card;
 -(void)cardSwipedRight:(UIView *)card;
 
-@property (retain,nonatomic)NSArray* exampleCardLabels; //%%% the labels the cards
-@property (retain,nonatomic)NSMutableArray* allCards; //%%% the labels the cards
-@property (nonatomic, strong) UIImageView *tinderLogo;
+@end
+
+@interface SwipingView : UIView
+
+@property (weak) id <SwipingViewDelegate> delegate;
+
+@property (nonatomic, strong)UIPanGestureRecognizer *panGestureRecognizer;
+@property (nonatomic)CGPoint originalPoint;
+@property (nonatomic,strong)SwipingOverlayView* overlayView;
+@property (nonatomic,strong)UILabel* information;
+@property (nonatomic, strong) UIImageView *imageView; //%%% a placeholder for any card-specific information
+
+-(void)leftClickAction;
+-(void)rightClickAction;
 
 @end

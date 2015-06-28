@@ -14,7 +14,7 @@ typedef NS_ENUM(NSUInteger , GGOverlayViewMode) {
     GGOverlayViewModeRight
 };
 
-@interface OverlayView : UIView
+@interface SwipingOverlayView : UIView
 
 @property (nonatomic) GGOverlayViewMode mode;
 @property (nonatomic, strong) UIImageView *imageView;
