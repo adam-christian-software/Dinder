@@ -17,7 +17,7 @@
 		99B7AEA5192D50D500C1B49C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B7AEA4192D50D500C1B49C /* main.m */; };
 		99B7AEA9192D50D500C1B49C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B7AEA8192D50D500C1B49C /* AppDelegate.m */; };
 		99B7AEAC192D50D500C1B49C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B7AEAA192D50D500C1B49C /* Main.storyboard */; };
-		99B7AEAF192D50D500C1B49C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B7AEAE192D50D500C1B49C /* ViewController.m */; };
+		99B7AEAF192D50D500C1B49C /* SwipingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B7AEAE192D50D500C1B49C /* SwipingViewController.m */; };
 		99B7AEB1192D50D500C1B49C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99B7AEB0192D50D500C1B49C /* Images.xcassets */; };
 		99B7AEB8192D50D500C1B49C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B7AEB7192D50D500C1B49C /* XCTest.framework */; };
 		99B7AEB9192D50D500C1B49C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B7AE98192D50D500C1B49C /* Foundation.framework */; };
@@ -32,6 +32,8 @@
 		B88075381B3D260200A6C299 /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88075371B3D260200A6C299 /* SimpleTableViewController.m */; };
 		B880753B1B3D276800A6C299 /* SimpleTableAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B880753A1B3D276800A6C299 /* SimpleTableAppDelegate.m */; };
 		B8919DBE1B0DAFA6009311C5 /* FromLeftSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B8919DBD1B0DAFA6009311C5 /* FromLeftSegue.m */; };
+		B8F879D01B408E8C0098C766 /* FiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F879CF1B408E8C0098C766 /* FiltersViewController.m */; };
+		B8F879D31B408EA40098C766 /* MatchesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F879D21B408EA40098C766 /* MatchesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +71,8 @@
 		99B7AEA7192D50D500C1B49C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		99B7AEA8192D50D500C1B49C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		99B7AEAB192D50D500C1B49C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		99B7AEAD192D50D500C1B49C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		99B7AEAE192D50D500C1B49C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		99B7AEAD192D50D500C1B49C /* SwipingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipingViewController.h; sourceTree = "<group>"; };
+		99B7AEAE192D50D500C1B49C /* SwipingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipingViewController.m; sourceTree = "<group>"; };
 		99B7AEB0192D50D500C1B49C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		99B7AEB6192D50D500C1B49C /* testing swipingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "testing swipingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B7AEB7192D50D500C1B49C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -95,6 +97,10 @@
 		B880753A1B3D276800A6C299 /* SimpleTableAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableAppDelegate.m; sourceTree = "<group>"; };
 		B8919DBC1B0DAFA5009311C5 /* FromLeftSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromLeftSegue.h; sourceTree = "<group>"; };
 		B8919DBD1B0DAFA6009311C5 /* FromLeftSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromLeftSegue.m; sourceTree = "<group>"; };
+		B8F879CE1B408E8C0098C766 /* FiltersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltersViewController.h; sourceTree = "<group>"; };
+		B8F879CF1B408E8C0098C766 /* FiltersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltersViewController.m; sourceTree = "<group>"; };
+		B8F879D11B408EA40098C766 /* MatchesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchesViewController.h; sourceTree = "<group>"; };
+		B8F879D21B408EA40098C766 /* MatchesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,10 +228,14 @@
 		B8295B031B280B97001933EF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B8F879CE1B408E8C0098C766 /* FiltersViewController.h */,
+				B8F879CF1B408E8C0098C766 /* FiltersViewController.m */,
+				B8F879D11B408EA40098C766 /* MatchesViewController.h */,
+				B8F879D21B408EA40098C766 /* MatchesViewController.m */,
 				B88075361B3D260200A6C299 /* SimpleTableViewController.h */,
 				B88075371B3D260200A6C299 /* SimpleTableViewController.m */,
-				99B7AEAD192D50D500C1B49C /* ViewController.h */,
-				99B7AEAE192D50D500C1B49C /* ViewController.m */,
+				99B7AEAD192D50D500C1B49C /* SwipingViewController.h */,
+				99B7AEAE192D50D500C1B49C /* SwipingViewController.m */,
 				7B280F261AECB76B0088E222 /* LoginViewController.h */,
 				7B280F251AECB76B0088E222 /* LoginViewController.m */,
 			);
@@ -446,11 +456,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8F879D01B408E8C0098C766 /* FiltersViewController.m in Sources */,
 				B880753B1B3D276800A6C299 /* SimpleTableAppDelegate.m in Sources */,
 				99FDDE7919A992F200371454 /* DraggableViewBackground.m in Sources */,
 				7B8DB0511AEC9F4400E035CF /* LoginView.m in Sources */,
 				B81E9FF81B13CA52004478D3 /* FromRightSegue.m in Sources */,
-				99B7AEAF192D50D500C1B49C /* ViewController.m in Sources */,
+				99B7AEAF192D50D500C1B49C /* SwipingViewController.m in Sources */,
 				99B7AED2192E914500C1B49C /* OverlayView.m in Sources */,
 				99B7AEA9192D50D500C1B49C /* AppDelegate.m in Sources */,
 				7B280F271AECB76B0088E222 /* LoginViewController.m in Sources */,
@@ -459,6 +470,7 @@
 				B8919DBE1B0DAFA6009311C5 /* FromLeftSegue.m in Sources */,
 				7BEDD9881AECD927002DCA1D /* SettingsView.m in Sources */,
 				B88075381B3D260200A6C299 /* SimpleTableViewController.m in Sources */,
+				B8F879D31B408EA40098C766 /* MatchesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

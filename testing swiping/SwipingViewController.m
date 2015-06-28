@@ -7,15 +7,15 @@
 //
 //  @cwRichardKim for updates and requests
 
-#import "ViewController.h"
+#import "SwipingViewController.h"
 #import "DraggableViewBackground.h"
 
 
-@interface ViewController ()
+@interface SwipingViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SwipingViewController
 
 - (void)viewDidLoad
 {

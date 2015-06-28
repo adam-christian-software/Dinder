@@ -33,6 +33,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SwipingViewController : UIViewController
 
 @end

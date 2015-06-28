@@ -76,7 +76,7 @@
         <!--Swiping Screen-->
         <scene sceneID="jLP-La-7uC">
             <objects>
-                <viewController title="Swiping Screen" id="c2J-2t-hbB" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Swiping Screen" id="c2J-2t-hbB" customClass="SwipingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2wz-iT-4Ow"/>
                         <viewControllerLayoutGuide type="bottom" id="uBS-6N-nXi"/>
@@ -166,7 +166,7 @@
         <!--Filters Screen-->
         <scene sceneID="0I8-0e-QVc">
             <objects>
-                <viewController title="Filters Screen" id="Du5-HR-WmP" sceneMemberID="viewController">
+                <viewController title="Filters Screen" id="Du5-HR-WmP" customClass="FiltersViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fWO-1B-80K"/>
                         <viewControllerLayoutGuide type="bottom" id="2OM-gJ-5yO"/>
