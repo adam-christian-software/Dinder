@@ -13,10 +13,10 @@
 @end
 
 @implementation SimpleTableViewController
-{
+
     NSArray *restaurantNames;
     NSArray *restaurantImages;
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     restaurantNames = [NSArray arrayWithObjects:@"Uchi", @"Franklin Barbecue", @"Eddie V's Edgewater Grille", @"Whole Foods Market", @"Uchiko", @"Truluck's Seafood", @"Jack Allen's Kitchen", @"Hopdoddy", @"Turf N Surf Po' Boy", @"Moonshine - Patio Bar & Grill", @"Rudy's Country Store & Bar-B-Q", @"Torchy's Tacos", @"Prelog's", @"Fonda San Miguel", @"Home Slice Pizza", @"Pinthouse Pizza", nil];
@@ -67,5 +67,42 @@
 {
     [self performSegueWithIdentifier:@"Segue" sender:self];
 }
+
+- (IBAction)unwindFromLeft:(UIStoryboardSegue*)sender
+{
+    UIViewController *sourceViewController = sender.sourceViewController;
+    // Pull any data from the view controller which initiated the unwind segue.
+    CATransition* transition = [CATransition animation];
+    transition.duration = .25;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush; //kCATransitionMoveIn; //, kCATransitionPush, kCATransitionReveal, kCATransitionFade
+    transition.subtype = kCATransitionFromLeft; //kCATransitionFromLeft, kCATransitionFromRight, kCATransitionFromTop, kCATransitionFromBottom
+    
+    [sourceViewController.navigationController.view.layer addAnimation:transition
+                                                                forKey:kCATransition];
+}
+
+- (IBAction)unwindFromRight:(UIStoryboardSegue*)sender
+{
+    UIViewController *sourceViewController = sender.sourceViewController;
+    // Pull any data from the view controller which initiated the unwind segue.
+    CATransition* transition = [CATransition animation];
+    transition.duration = .25;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush; //kCATransitionMoveIn; //, kCATransitionPush, kCATransitionReveal, kCATransitionFade
+    transition.subtype = kCATransitionFromRight; //kCATransitionFromLeft, kCATransitionFromRight, kCATransitionFromTop, kCATransitionFromBottom
+    
+    [sourceViewController.navigationController.view.layer addAnimation:transition
+                                                                forKey:kCATransition];
+}
+
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    // Make sure your segue name in storyboard is the same as this line
+//    if ([[segue identifier] isEqualToString:@"Segue"])
+//    {
+//        //if you need to pass data to the next controller do it here
+//    }
+//}
 
 @end
