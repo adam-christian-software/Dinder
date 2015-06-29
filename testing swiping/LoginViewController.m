@@ -28,6 +28,7 @@
     // e.g. self.myOutlet = nil;
 }
 
+// Handles the text filled after hitting the 'Enter' key
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     if (textField == self.passwordTextField) {
         if(self.usernameTextField.text && self.usernameTextField.text.length > 0){
