@@ -34,6 +34,7 @@
 		B88075381B3D260200A6C299 /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88075371B3D260200A6C299 /* SimpleTableViewController.m */; };
 		B880753B1B3D276800A6C299 /* SimpleTableAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B880753A1B3D276800A6C299 /* SimpleTableAppDelegate.m */; };
 		B8919DBE1B0DAFA6009311C5 /* FromLeftSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B8919DBD1B0DAFA6009311C5 /* FromLeftSegue.m */; };
+		B8BDD0741B40BFE5009465D0 /* RestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8BDD0731B40BFE5009465D0 /* RestaurantViewController.m */; };
 		B8F879D01B408E8C0098C766 /* FiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F879CF1B408E8C0098C766 /* FiltersViewController.m */; };
 		B8F879D31B408EA40098C766 /* MatchesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F879D21B408EA40098C766 /* MatchesViewController.m */; };
 /* End PBXBuildFile section */
@@ -103,6 +104,8 @@
 		B880753A1B3D276800A6C299 /* SimpleTableAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableAppDelegate.m; sourceTree = "<group>"; };
 		B8919DBC1B0DAFA5009311C5 /* FromLeftSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromLeftSegue.h; sourceTree = "<group>"; };
 		B8919DBD1B0DAFA6009311C5 /* FromLeftSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromLeftSegue.m; sourceTree = "<group>"; };
+		B8BDD0721B40BFE5009465D0 /* RestaurantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantViewController.h; sourceTree = "<group>"; };
+		B8BDD0731B40BFE5009465D0 /* RestaurantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantViewController.m; sourceTree = "<group>"; };
 		B8F879CE1B408E8C0098C766 /* FiltersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltersViewController.h; sourceTree = "<group>"; };
 		B8F879CF1B408E8C0098C766 /* FiltersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltersViewController.m; sourceTree = "<group>"; };
 		B8F879D11B408EA40098C766 /* MatchesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchesViewController.h; sourceTree = "<group>"; };
@@ -240,6 +243,8 @@
 				7B280F251AECB76B0088E222 /* LoginViewController.m */,
 				B8F879D11B408EA40098C766 /* MatchesViewController.h */,
 				B8F879D21B408EA40098C766 /* MatchesViewController.m */,
+				B8BDD0721B40BFE5009465D0 /* RestaurantViewController.h */,
+				B8BDD0731B40BFE5009465D0 /* RestaurantViewController.m */,
 				7BF1E32C1B408F23002ABC25 /* SignUpViewController.h */,
 				7BF1E32D1B408F23002ABC25 /* SignUpViewController.m */,
 				B88075361B3D260200A6C299 /* SimpleTableViewController.h */,
@@ -469,6 +474,7 @@
 				B8F879D01B408E8C0098C766 /* FiltersViewController.m in Sources */,
 				B880753B1B3D276800A6C299 /* SimpleTableAppDelegate.m in Sources */,
 				99FDDE7919A992F200371454 /* SwipingViewBackground.m in Sources */,
+				B8BDD0741B40BFE5009465D0 /* RestaurantViewController.m in Sources */,
 				7B8DB0511AEC9F4400E035CF /* LoginView.m in Sources */,
 				B81E9FF81B13CA52004478D3 /* FromRightSegue.m in Sources */,
 				99B7AEAF192D50D500C1B49C /* SwipingViewController.m in Sources */,
