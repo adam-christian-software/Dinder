@@ -24,7 +24,7 @@
     
     NSString *title = sourceViewController.title;
     NSString *title2 = destinationController.title;
-    NSLog(@"Perform Right Segue transtition from %@ to %@", title, title2);
+    NSLog(@"Perform Right Segue transtition from '%@' to '%@'", title, title2);
     
     [sourceViewController.navigationController.view.layer addAnimation:transition
                                                                 forKey:kCATransition];

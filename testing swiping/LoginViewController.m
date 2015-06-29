@@ -30,11 +30,14 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     if (textField == self.passwordTextField) {
-        NSLog(@"password text entered %@", textField.text);
+        if(self.usernameTextField.text && self.usernameTextField.text.length > 0){
+            NSLog(@"username text entered '%@'", self.usernameTextField.text);
+        }
+        NSLog(@"password text entered '%@'", textField.text);
         [textField resignFirstResponder];
         return NO;
     } else if (textField == self.usernameTextField) {
-        NSLog(@"username text entered %@", textField.text);
+        NSLog(@"username text entered '%@'", textField.text);
         [textField resignFirstResponder];
         return NO;
     }
