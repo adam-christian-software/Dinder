@@ -17,6 +17,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.passwordTextField.delegate = self;
+    self.usernameTextField.delegate = self;
 }
 
 - (void)viewDidUnload
@@ -24,6 +26,20 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if (textField == self.passwordTextField) {
+        NSLog(@"password text entered %@", textField.text);
+        [textField resignFirstResponder];
+        return NO;
+    } else if (textField == self.usernameTextField) {
+        NSLog(@"username text entered %@", textField.text);
+        [textField resignFirstResponder];
+        return NO;
+    }
+    
+    return YES;
 }
 
 - (IBAction)unwindFromLeft:(UIStoryboardSegue*)sender

@@ -33,5 +33,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController <UITextFieldDelegate>
+
+@property (nonatomic,weak) IBOutlet UITextField * usernameTextField;
+@property (nonatomic,weak) IBOutlet UITextField * passwordTextField;
+
 @end

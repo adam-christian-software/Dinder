@@ -39,7 +39,10 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LPb-Jp-NHg">
                                 <rect key="frame" x="60" y="369" width="200" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                <connections>
+                                    <segue destination="c2J-2t-hbB" kind="custom" customClass="FromLeftSegue" id="Ora-nA-1bM"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1V-07-ZcW">
                                 <rect key="frame" x="60" y="421" width="200" height="30"/>
@@ -59,11 +62,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DZM-0y-Sin">
-                                <rect key="frame" x="60" y="312" width="200" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9D-0J-75H">
                                 <rect key="frame" x="16" y="518" width="55" height="30"/>
                                 <state key="normal" title="Sign Up">
@@ -73,10 +71,19 @@
                                     <segue destination="0tc-7i-Xx4" kind="custom" customClass="FromLeftSegue" id="ixL-QW-dmX"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="DZM-0y-Sin">
+                                <rect key="frame" x="61" y="312" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Cov-HB-nD1"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="LPb-Jp-NHg" id="7Cr-4r-ZUj"/>
+                        <outlet property="usernameTextField" destination="DZM-0y-Sin" id="H9s-3a-AMF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,7 +117,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UA5-XB-frL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="wr5-iT-g8S" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="392" y="939"/>
+            <point key="canvasLocation" x="14" y="1013"/>
         </scene>
         <!--Swiping Screen-->
         <scene sceneID="jLP-La-7uC">
@@ -370,4 +377,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="cKM-Yc-Ymq"/>
+    </inferredMetricsTieBreakers>
 </document>
