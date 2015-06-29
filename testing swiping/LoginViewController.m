@@ -40,6 +40,7 @@
     } else if (textField == self.usernameTextField) {
         NSLog(@"username text entered '%@'", textField.text);
         [textField resignFirstResponder];
+        [self.passwordTextField becomeFirstResponder];
         return NO;
     }
     
