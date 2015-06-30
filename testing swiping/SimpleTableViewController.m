@@ -7,6 +7,7 @@
 //
 
 #import "SimpleTableViewController.h"
+#import "RestaurantViewController.h"
 
 @interface SimpleTableViewController ()
 
@@ -16,6 +17,8 @@
 
     NSArray *restaurantNames;
     NSArray *restaurantImages;
+
+@synthesize tableView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,7 +38,7 @@
 {
     static NSString *simpleTableIdentifier = @"SimpleTableCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
@@ -61,11 +64,6 @@
     
     cell.imageView.image = tempImage;
     return cell;
-}
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [self performSegueWithIdentifier:@"Segue" sender:self];
 }
 
 - (IBAction)unwindFromLeft:(UIStoryboardSegue*)sender
@@ -98,13 +96,18 @@
                                                                 forKey:kCATransition];
 }
 
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    // Make sure your segue name in storyboard is the same as this line
-//    if ([[segue identifier] isEqualToString:@"Segue"])
-//    {
-//        //if you need to pass data to the next controller do it here
-//    }
-//}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"ShowRestaurant" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"ShowRestaurant"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        RestaurantViewController *destViewController = segue.destinationViewController;
+        destViewController.restaurantTitle = [restaurantNames objectAtIndex:indexPath.row];
+        //destViewController.restaurantPicture = [restaurantImages objectAtIndex:indexPath.row];
+    }
+}
 
 @end

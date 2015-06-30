@@ -10,4 +10,7 @@
 
 @interface RestaurantViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UILabel *restaurantLabel;
+@property (nonatomic, strong) NSString *restaurantTitle;
+
 @end

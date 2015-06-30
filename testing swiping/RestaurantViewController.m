@@ -14,9 +14,14 @@
 
 @implementation RestaurantViewController
 
+@synthesize restaurantLabel;
+@synthesize restaurantTitle;
+//@synthesize restaurantPicture;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    restaurantLabel.text = restaurantTitle;
 }
 
 - (void)viewDidUnload
@@ -54,6 +59,16 @@
     
     [sourceViewController.navigationController.view.layer addAnimation:transition
                                                                 forKey:kCATransition];
+}
+
+-(void)setTitle:(NSString*)restaurantName
+{
+    NSLog(@"This is the %@", restaurantName);
+}
+
+-(void)setPicture:(NSString*)restaurantImage
+{
+    NSLog(@"This is the %@", restaurantImage);
 }
 
 @end

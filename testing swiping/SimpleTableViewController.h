@@ -10,4 +10,6 @@
 
 @interface SimpleTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
+@property(nonatomic, strong) IBOutlet UITableView *tableView;
+
 @end

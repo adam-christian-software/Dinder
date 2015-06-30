@@ -254,7 +254,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="jtV-h1-WZO" kind="push" identifier="Segue" id="Wsx-55-yna"/>
+                        <outlet property="tableView" destination="N75-Xe-1lf" id="8v4-FM-6La"/>
+                        <segue destination="jtV-h1-WZO" kind="push" identifier="ShowRestaurant" id="Wsx-55-yna"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="621-yO-ldi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -288,9 +289,9 @@
                                     <segue destination="wq2-iV-orr" kind="unwind" unwindAction="unwindFromLeft:" id="ox3-uQ-WWj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUP-mp-evr">
-                                <rect key="frame" x="139" y="62" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUP-mp-evr">
+                                <rect key="frame" x="25" y="62" width="279" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -299,7 +300,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="A3J-Kf-fuF"/>
                     <connections>
-                        <outlet property="restaurantTitle" destination="ZUP-mp-evr" id="IAX-IO-t9K"/>
+                        <outlet property="restaurantLabel" destination="ZUP-mp-evr" id="tLk-Ij-zfZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jbp-v9-6h9" userLabel="First Responder" sceneMemberID="firstResponder"/>
