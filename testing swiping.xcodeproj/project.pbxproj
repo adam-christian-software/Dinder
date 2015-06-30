@@ -30,6 +30,7 @@
 		99B7AED2192E914500C1B49C /* SwipingOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B7AED1192E914500C1B49C /* SwipingOverlayView.m */; };
 		99FDDE7919A992F200371454 /* SwipingViewBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FDDE7819A992F200371454 /* SwipingViewBackground.m */; };
 		B81E9FF81B13CA52004478D3 /* FromRightSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B81E9FF71B13CA52004478D3 /* FromRightSegue.m */; };
+		B85D2DF51B43374900630CE7 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D2DF41B43374900630CE7 /* Restaurant.m */; };
 		B880752F1B3D237300A6C299 /* SimpleTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B880752E1B3D237300A6C299 /* SimpleTableTests.m */; };
 		B88075381B3D260200A6C299 /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88075371B3D260200A6C299 /* SimpleTableViewController.m */; };
 		B880753B1B3D276800A6C299 /* SimpleTableAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B880753A1B3D276800A6C299 /* SimpleTableAppDelegate.m */; };
@@ -94,6 +95,8 @@
 		99FDDE7819A992F200371454 /* SwipingViewBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipingViewBackground.m; sourceTree = "<group>"; };
 		B81E9FF61B13CA52004478D3 /* FromRightSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromRightSegue.h; sourceTree = "<group>"; };
 		B81E9FF71B13CA52004478D3 /* FromRightSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromRightSegue.m; sourceTree = "<group>"; };
+		B85D2DF31B43374900630CE7 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		B85D2DF41B43374900630CE7 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
 		B88075101B3D237200A6C299 /* SimpleTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88075281B3D237300A6C299 /* SimpleTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B880752D1B3D237300A6C299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -186,6 +189,7 @@
 		99B7AE9E192D50D500C1B49C /* testing swiping */ = {
 			isa = PBXGroup;
 			children = (
+				B85D2DF61B43377F00630CE7 /* Objects */,
 				B8F879CD1B40892C0098C766 /* Delegates */,
 				B8295B031B280B97001933EF /* Controllers */,
 				B8295B041B280B99001933EF /* Views */,
@@ -283,6 +287,15 @@
 				B81E9FF71B13CA52004478D3 /* FromRightSegue.m */,
 			);
 			name = Segues;
+			sourceTree = "<group>";
+		};
+		B85D2DF61B43377F00630CE7 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				B85D2DF31B43374900630CE7 /* Restaurant.h */,
+				B85D2DF41B43374900630CE7 /* Restaurant.m */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 		B880752B1B3D237300A6C299 /* SimpleTableTests */ = {
@@ -473,6 +486,7 @@
 			files = (
 				B8F879D01B408E8C0098C766 /* FiltersViewController.m in Sources */,
 				B880753B1B3D276800A6C299 /* SimpleTableAppDelegate.m in Sources */,
+				B85D2DF51B43374900630CE7 /* Restaurant.m in Sources */,
 				99FDDE7919A992F200371454 /* SwipingViewBackground.m in Sources */,
 				B8BDD0741B40BFE5009465D0 /* RestaurantViewController.m in Sources */,
 				7B8DB0511AEC9F4400E035CF /* LoginView.m in Sources */,

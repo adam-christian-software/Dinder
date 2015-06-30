@@ -8,6 +8,7 @@
 
 #import "SimpleTableViewController.h"
 #import "RestaurantViewController.h"
+#import "Restaurant.h"
 
 @interface SimpleTableViewController ()
 
@@ -16,6 +17,8 @@
 @implementation SimpleTableViewController
 
     NSArray *restaurantNames;
+    NSArray *restaurantNumbers;
+    NSArray *restaurantAddresses;
     NSArray *restaurantImages;
 
 @synthesize tableView;
@@ -25,6 +28,16 @@
     restaurantNames = [NSArray arrayWithObjects:@"Uchi", @"Franklin Barbecue", @"Eddie V's Edgewater Grille", @"Whole Foods Market", @"Uchiko", @"Truluck's Seafood", @"Jack Allen's Kitchen", @"Hopdoddy", @"Turf N Surf Po' Boy", @"Moonshine - Patio Bar & Grill", @"Rudy's Country Store & Bar-B-Q", @"Torchy's Tacos", @"Prelog's", @"Fonda San Miguel", @"Home Slice Pizza", @"Pinthouse Pizza", nil];
     
     restaurantImages = [NSArray arrayWithObjects:@"Restaurant1.jpg", @"Restaurant2.jpg", @"Restaurant3.jpg", @"Restaurant4.jpg", @"Restaurant5.jpg", @"Restaurant6.jpg", @"Restaurant7.jpg", @"Restaurant8.jpg", @"Restaurant9.jpg", @"Restaurant10.jpg", @"Restaurant11.jpg", @"Restaurant12.jpg", @"Restaurant13.jpg", @"Restaurant14.jpg", @"Restaurant15.jpg", @"Restaurant16.jpg", nil];
+    
+    restaurantNumbers = [NSArray arrayWithObjects:@"781-572-6310", @"781-572-6310", @"781-572-6310", @"781-572-6310", @"781-572-6310", @"781-572-6310", @"781-572-6310", @"781-572-6310", @"781-572-6310", @"781-572-6310", @"781-572-6310", @"781-572-6310", @"781-572-6310", @"781-572-6310", @"781-572-6310", @"781-572-6310", nil];
+                         
+    restaurantAddresses = [NSArray arrayWithObjects:@"6 Washington St. Lexington, MA 02421", @"6 Washington St. Lexington, MA 02421", @"6 Washington St. Lexington, MA 02421", @"6 Washington St. Lexington, MA 02421", @"6 Washington St. Lexington, MA 02421", @"6 Washington St. Lexington, MA 02421", @"6 Washington St. Lexington, MA 02421", @"6 Washington St. Lexington, MA 02421", @"6 Washington St. Lexington, MA 02421", @"6 Washington St. Lexington, MA 02421", @"6 Washington St. Lexington, MA 02421", @"6 Washington St. Lexington, MA 02421", @"6 Washington St. Lexington, MA 02421", @"6 Washington St. Lexington, MA 02421", @"6 Washington St. Lexington, MA 02421", @"6 Washington St. Lexington, MA 02421", nil];
+    
+    Restaurant *restaurant1 = [Restaurant new];
+    restaurant1.name = restaurantNames[0];
+    restaurant1.phoneNumber = restaurantNumbers[0];
+    restaurant1.address = restaurantNumbers[0];
+    restaurant1.imageFile = restaurantImages[0];
     
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
