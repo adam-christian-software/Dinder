@@ -295,6 +295,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-frame" translatesAutoresizingMaskIntoConstraints="NO" id="hm8-aF-9df">
+                                <rect key="frame" x="29" y="100" width="262" height="283"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eqb-Ai-wlg">
                                 <rect key="frame" x="40" y="112" width="240" height="240"/>
                             </imageView>
@@ -474,6 +477,7 @@
         <image name="SaladIcon" width="512" height="512"/>
         <image name="TempMap" width="500" height="299"/>
         <image name="noButton" width="70" height="70"/>
+        <image name="photo-frame" width="297" height="199"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
