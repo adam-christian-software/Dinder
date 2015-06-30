@@ -12,5 +12,7 @@
 
 @property (nonatomic, strong) IBOutlet UILabel *restaurantLabel;
 @property (nonatomic, strong) NSString *restaurantTitle;
+@property (nonatomic, strong) IBOutlet UIImageView *restaurantPicture;
+@property (nonatomic, strong) NSString *restaurantName;
 
 @end

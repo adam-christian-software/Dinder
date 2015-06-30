@@ -106,7 +106,7 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         RestaurantViewController *destViewController = segue.destinationViewController;
         destViewController.restaurantTitle = [restaurantNames objectAtIndex:indexPath.row];
-        //destViewController.restaurantPicture = [restaurantImages objectAtIndex:indexPath.row];
+        destViewController.restaurantName = [restaurantImages objectAtIndex:indexPath.row];
     }
 }
 

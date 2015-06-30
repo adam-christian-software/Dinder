@@ -16,12 +16,14 @@
 
 @synthesize restaurantLabel;
 @synthesize restaurantTitle;
-//@synthesize restaurantPicture;
+@synthesize restaurantPicture;
+@synthesize restaurantName;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     restaurantLabel.text = restaurantTitle;
+    restaurantPicture.image = [UIImage imageNamed: restaurantName];
 }
 
 - (void)viewDidUnload

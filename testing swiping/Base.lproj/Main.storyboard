@@ -290,17 +290,21 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUP-mp-evr">
-                                <rect key="frame" x="25" y="62" width="279" height="21"/>
+                                <rect key="frame" x="21" y="62" width="279" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eqb-Ai-wlg">
+                                <rect key="frame" x="40" y="112" width="240" height="240"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="A3J-Kf-fuF"/>
                     <connections>
                         <outlet property="restaurantLabel" destination="ZUP-mp-evr" id="tLk-Ij-zfZ"/>
+                        <outlet property="restaurantPicture" destination="eqb-Ai-wlg" id="h74-pJ-Xlq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jbp-v9-6h9" userLabel="First Responder" sceneMemberID="firstResponder"/>
